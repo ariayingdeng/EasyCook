@@ -1,0 +1,44 @@
+[19-Jul-2022 06:28:57 Europe/Berlin] Please enter your password with at least 8 characters.
+[19-Jul-2022 06:38:49 Europe/Berlin] PHP Warning:  require_once(inc/Utility/PDOWrapper.class.php): Failed to open stream: No such file or directory in E:\CSIS\Summer2022\3280\3280-project\Logout.php on line 8
+[19-Jul-2022 06:38:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'inc/Utility/PDOWrapper.class.php' (include_path='C:\xampp\php\PEAR') in E:\CSIS\Summer2022\3280\3280-project\Logout.php:8
+Stack trace:
+#0 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\Logout.php on line 8
+[19-Jul-2022 06:39:19 Europe/Berlin] PHP Warning:  Undefined array key "username" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 129
+[19-Jul-2022 06:46:56 Europe/Berlin] Please enter the correct email address.
+[19-Jul-2022 06:46:56 Europe/Berlin] Please enter your username.
+[19-Jul-2022 06:46:56 Europe/Berlin] Please enter your password with at least 8 characters.
+[19-Jul-2022 06:47:44 Europe/Berlin] Please enter the correct email address.
+[19-Jul-2022 06:47:44 Europe/Berlin] Please enter your password with at least 8 characters.
+[19-Jul-2022 06:48:16 Europe/Berlin] Please enter the correct email address.
+[19-Jul-2022 06:48:16 Europe/Berlin] Please enter your username.
+[19-Jul-2022 06:48:16 Europe/Berlin] Please enter your password with at least 8 characters.
+[19-Jul-2022 06:49:10 Europe/Berlin] Please enter the correct email address.
+[19-Jul-2022 06:49:10 Europe/Berlin] Please enter your username.
+[19-Jul-2022 06:49:10 Europe/Berlin] Please enter your password with at least 8 characters.
+[19-Jul-2022 06:49:44 Europe/Berlin] Please enter the correct email address.
+[19-Jul-2022 06:49:44 Europe/Berlin] Please enter your password with at least 8 characters.
+[19-Jul-2022 06:50:57 Europe/Berlin] Please enter your password with at least 8 characters.
+[19-Jul-2022 06:53:17 Europe/Berlin] Please enter the correct email address.
+[19-Jul-2022 06:53:17 Europe/Berlin] Please enter your username.
+[19-Jul-2022 06:53:17 Europe/Berlin] Please enter your password with at least 8 characters.
+[19-Jul-2022 06:55:47 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\CSIS\Summer2022\3280\3280-project\Login.php on line 13
+[19-Jul-2022 06:55:47 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 8
+[19-Jul-2022 06:55:47 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 14
+[19-Jul-2022 07:01:15 Europe/Berlin] Please enter your password with at least 8 characters.
+[19-Jul-2022 07:01:15 Europe/Berlin] Email has been taken.
+[19-Jul-2022 07:05:00 Europe/Berlin] PHP Warning:  Undefined array key "username" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 139
+[19-Jul-2022 07:29:31 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 8
+[19-Jul-2022 07:29:31 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 14
+[19-Jul-2022 07:29:41 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 8
+[19-Jul-2022 07:29:41 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 14
+[19-Jul-2022 07:29:46 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 8
+[19-Jul-2022 07:29:46 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 14
+[19-Jul-2022 07:30:00 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 8
+[19-Jul-2022 07:30:00 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 14
+[19-Jul-2022 07:58:03 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in E:\CSIS\Summer2022\3280\3280-project\Logout.php on line 21
+[19-Jul-2022 07:58:03 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in E:\CSIS\Summer2022\3280\3280-project\Logout.php on line 21 and defined in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php:32
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Logout.php(21): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php on line 32
