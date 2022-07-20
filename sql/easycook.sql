@@ -7,11 +7,14 @@ create table user (
 	email VARCHAR(50),
     username VARCHAR(50),
 	password VARCHAR(250),
-    phoneNumber INT(20),
-    address VARCHAR(500)
+
+    phoneNumber VARCHAR(10),
+    address VARCHAR(200)
 ) Engine=InnoDB;
 
 INSERT INTO user VALUES (1,"Aria@gmail.com","Aria","$2y$10$Wc2ccfQcNXgU7yStROapEunzjKDOBfCzknPPq2.iqUAy9DkLhCMPK","7783222323","address1");
+
+   
 
 create table orders (
 	id INT AUTO_INCREMENT PRIMARY KEY,	
@@ -23,6 +26,7 @@ create table orders (
 ) Engine=InnoDB;
 
 INSERT INTO orders VALUES (1,200,"https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg","BeaverTails","delicious dog",1);
+
 
 
 
@@ -42,6 +46,8 @@ create table orderItem (
 	amount INT
 ) Engine=InnoDB;
 
+
+INSERT INTO user VALUES (1, 'aria@qq.com', 'Aria', '$2y$10$isKVCgfPBnl/oF/6reugj.MwGQkh6dwyaqIDpea5QZsMTBMeC5QjW', '1234567890', '88, New Westminster, BC');
 
 INSERT INTO inventoryItem VALUES
   (1, 'Potatoes', 6000, 0.99, "1 medium"),
@@ -120,6 +126,7 @@ INSERT INTO inventoryItem VALUES
 
 
   
+
 
 
 

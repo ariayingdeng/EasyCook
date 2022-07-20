@@ -16,6 +16,10 @@ if (LoginManager::verifyLogin()) {
     // UserDAO::init();
     // $user = UserDAO::getUser($_SESSION['loggedemail']);
     Page::showHeader();
+    $recipeURL = "https://www.themealdb.com/api/json/v1/1/search.php?f=a";
+    $data = file_get_contents($recipeURL);
+    $recipes = json_decode($data);
+    var_dump($recipes);
 } else {
     header('Location: Login.php');
 }
