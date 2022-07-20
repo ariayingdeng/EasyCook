@@ -6,7 +6,9 @@ create table user (
 	id INT AUTO_INCREMENT PRIMARY KEY,	
 	email VARCHAR(50),
     username VARCHAR(50),
-	password VARCHAR(250)
+	password VARCHAR(250),
+    phoneNumber VARCHAR(10),
+    address VARCHAR(200)
 ) Engine=InnoDB;
 
 create table orders (
@@ -32,6 +34,8 @@ create table orderItem (
     inventoryID INT,
 	amount INT
 ) Engine=InnoDB;
+
+INSERT INTO user VALUES (1, 'aria@qq.com', 'Aria', '$2y$10$isKVCgfPBnl/oF/6reugj.MwGQkh6dwyaqIDpea5QZsMTBMeC5QjW', '1234567890', '88, New Westminster, BC');
 
 INSERT INTO inventoryItem VALUES
   (1, 'Potatoes', 6000, 0.99, "1 medium"),
@@ -67,7 +71,37 @@ INSERT INTO inventoryItem VALUES
   (31, 'Bread', 10000, 2, '6 slices'),
   (32, 'Vegetable Oil', 5000, 4.8, '200ml'),
   (33, 'Beef Gravy', 5000, 5.2, '1 can'),
-  (34, 'Potatoes', 5000, 4.6, '8 small'),
+  (34, 'Minced Beef', 5000, 18, '1.8g'),
   (35, 'Cheese Curds', 5000, 3.2, '50g'),
   (36, 'Maple Syrup', 6000, 2.8, '50ml'),
-  (37, 'Single Cream', 10000, 3.6, '100ml');
+  (37, 'Single Cream', 10000, 3.6, '100ml'),
+  (38,'Water',10000,0.2,'100ml'),
+  (39,'Yeast',10000,10,'1pound'),
+  (40,'Lemon',10000,0.67,'1unit'),
+  (41,'Olive Oil',10000,11,'700ml'),
+  (42,'Bacon',10000,7,'300g'),
+  (43,'Parsley',10000,3,'300g'),
+  (44,'Pepper',10000,3,'300g'),
+  (45,'Muscovado Sugar',10000,4,'300g'),
+  (46,'Raisins',10000,7,'300g'),
+  (47,'Walnuts',10000,5,'300g'),
+  (48,'Beef Brisket',10000,10,'500g'),
+  (49,'Black Pepper',10000,3,'500g'),
+  (50,'Coriander',10000,1.2,'500g'),
+  (51,'Bay Leaf',10000,0.7,'500g'),
+  (52,'Cloves',10000,0.5,'500g'),
+  (53,'Paprika',10000,0.3,'500g'),
+  (54,'Dill',10000,0.7,'500g'),
+  (55,'English Mustard',10000,1,'500g'),
+  (56,'Celery Salt',10000,3,'1000g'),
+  (57,'Red Pepper Flakes',10000,0.7,'300g'),
+  (58,'Custard',10000,1.37,'100g'),
+  (59,'Caster Sugar',10000,6.49,'500g'),
+  (60,'Cocoa',10000,1.2,'500g'),
+  (61,'Digestive Biscuits',10000,3.3,'500g'),
+  (62,'Desiccated Coconut',10000,6,'250g'),
+  (63,'Almonds',10000,11.87,'0.5 Pounds'),
+  (64,'Double Cream',10000,2.97,'1L'),
+  (65,'Custard Powder',10000,4.67,'340g'),
+  (66,'Dark Chocolate',10000,10,'100g'),
+  (67,'Creamed Corn',10000,28.95,'2kg');
