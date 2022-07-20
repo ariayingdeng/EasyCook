@@ -41,12 +41,12 @@ class Page
                         </ul>
                         <form class="d-flex">
                             <?php
-                                 if (isset($_SESSION['loggedemail'])) {
-                                    echo "<a class='btn btn-outline-light font-monospace' href='Logout.php'>Logout</a>";
-                                 } else {
-                                    echo "<a class='btn btn-outline-light font-monospace' href='Register.php'>Register</a>&nbsp;&nbsp;&nbsp;&nbsp;";
-                                    echo "<a class='btn btn-outline-light font-monospace' href='Login.php'>Login</a>";
-                                 }
+                            if (isset($_SESSION['loggedemail'])) {
+                                echo "<a class='btn btn-outline-light font-monospace' href='Logout.php'>Logout</a>";
+                            } else {
+                                echo "<a class='btn btn-outline-light font-monospace' href='Register.php'>Register</a>&nbsp;&nbsp;&nbsp;&nbsp;";
+                                echo "<a class='btn btn-outline-light font-monospace' href='Login.php'>Login</a>";
+                            }
                             ?>
                             &nbsp;&nbsp;
                         </form>
@@ -145,8 +145,36 @@ class Page
         <div class="alert alert-warning text-center m-0" role="alert">
             <h2>Thank you for your visit, <?php echo $user->getUsername(); ?>!</h2>
         </div>
-        <img src="<?php echo IMAGES . "/logout.jpg"?>" class="img-fluid rounded mx-auto d-block" alt="logout">
+        <img src="<?php echo IMAGES . "/logout.jpg" ?>" class="img-fluid rounded mx-auto d-block" alt="logout">
     <?php
+    }
+
+    static function showHome($recipes)
+    {
+    ?>
+        <div class="d-flex justify-content-between align-content-start flex-wrap">
+            <?php
+            foreach ($recipes as $recipe) {
+                self::showRecipeCard($recipe);
+            }
+            ?>
+        </div>
+
+    <?php
+    }
+
+    static function showRecipeCard($recipe)
+    {
+    ?>
+        <div class="card mb-4" style="width: 18rem;">
+            <img src="<?=$recipe->getImageURL();?>" class="card-img-top" alt="mealPic">
+            <div class="card-body">
+                <h5 class="card-title"><?=$recipe->getMealName();?></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Order</a>
+            </div>
+        </div>
+<?php
     }
 }
 

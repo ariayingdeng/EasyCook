@@ -53,3 +53,394 @@ Stack trace:
 [20-Jul-2022 01:22:48 Europe/Berlin] PHP Warning:  file_get_contents(www.themealdb.com/api/json/v1/1/search.php?f=a): Failed to open stream: No such file or directory in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 20
 [20-Jul-2022 01:22:50 Europe/Berlin] PHP Warning:  file_get_contents(www.themealdb.com/api/json/v1/1/search.php?f=a): Failed to open stream: No such file or directory in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 20
 [20-Jul-2022 01:23:16 Europe/Berlin] PHP Warning:  file_get_contents(www.themealdb.com/api/json/v1/1/search.php?f=a): Failed to open stream: No such file or directory in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 20
+[20-Jul-2022 23:04:45 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 12
+[20-Jul-2022 23:04:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:04:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:04:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:04:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:04:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:04:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:06:27 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 12
+[20-Jul-2022 23:06:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:06:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:06:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:06:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:06:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:06:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:02 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:03 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:04 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:05 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$idMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:39 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:39 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:39 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:39 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:39 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:39 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:40 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:41 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:42 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strInstructions" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strMealThumb" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strCategory" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:07:43 Europe/Berlin] PHP Warning:  Attempt to read property "strTags" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:07 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:08 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:09 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:08:10 Europe/Berlin] PHP Warning:  Attempt to read property "idMeal" on array in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 15
+[20-Jul-2022 23:08:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:08:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:08:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:08:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:08:10 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:42 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:44 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:45 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMeal in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 16
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strInstructions in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 17
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
+[20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
