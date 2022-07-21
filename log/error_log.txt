@@ -444,3 +444,55 @@ Stack trace:
 [20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strMealThumb in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 18
 [20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strCategory in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 19
 [20-Jul-2022 23:10:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strTags in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php on line 20
+[21-Jul-2022 00:05:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php:56
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(33): RecipeDAO::getRowCount()
+#1 E:\CSIS\Summer2022\3280\3280-project\Home.php(18): RecipeService::saveRecipes()
+#2 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php on line 56
+[21-Jul-2022 00:10:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php:48
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php(56): RecipeDAO::getAllRecipes()
+#1 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(33): RecipeDAO::getRowCount()
+#2 E:\CSIS\Summer2022\3280\3280-project\Home.php(18): RecipeService::saveRecipes()
+#3 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php on line 48
+[21-Jul-2022 00:11:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php:21
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(50): RecipeDAO::saveRecipe(Object(Recipe))
+#1 E:\CSIS\Summer2022\3280\3280-project\Home.php(18): RecipeService::saveRecipes()
+#2 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php on line 21
+[21-Jul-2022 00:15:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php:21
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(50): RecipeDAO::saveRecipe(Object(Recipe))
+#1 E:\CSIS\Summer2022\3280\3280-project\Home.php(18): RecipeService::saveRecipes()
+#2 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php on line 21
+[21-Jul-2022 00:15:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php:21
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(50): RecipeDAO::saveRecipe(Object(Recipe))
+#1 E:\CSIS\Summer2022\3280\3280-project\Home.php(18): RecipeService::saveRecipes()
+#2 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php on line 21
+[21-Jul-2022 00:17:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php:93
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php(56): PDOAgent->rowCount()
+#1 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(34): RecipeDAO::getRowCount()
+#2 E:\CSIS\Summer2022\3280\3280-project\Home.php(18): RecipeService::saveRecipes()
+#3 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 93
+[21-Jul-2022 00:17:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php:93
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php(56): PDOAgent->rowCount()
+#1 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(33): RecipeDAO::getRowCount()
+#2 E:\CSIS\Summer2022\3280\3280-project\Home.php(22): RecipeService::saveRecipes()
+#3 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 93
+[21-Jul-2022 00:18:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php:93
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php(56): PDOAgent->rowCount()
+#1 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(33): RecipeDAO::getRowCount()
+#2 E:\CSIS\Summer2022\3280\3280-project\Home.php(22): RecipeService::saveRecipes()
+#3 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 93

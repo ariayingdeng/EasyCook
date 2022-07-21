@@ -17,12 +17,13 @@ class Page
             <meta name="author" content="">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <link rel="stylesheet" href="css/styles.css">
+            <script src="https://kit.fontawesome.com/2c624dc77d.js" crossorigin="anonymous"></script>
         </head>
 
         <body>
             <nav class="navbar navbar-expand-sm navbar-dark p-3" style="background-color: #ff7f4d;">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="">
+                    <a class="navbar-brand" href="Home.php">
                         <!-- TODO: add icon for the project -->
                         <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top">
                         Easy Cook
@@ -30,7 +31,7 @@ class Page
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item fw-bold">
-                                <a class="nav-link active" aria-current="page" href="">Home</a>
+                                <a class="nav-link active" aria-current="page" href="Home.php">Home</a>
                             </li>
                             <li class="nav-item fw-bold">
                                 <a class="nav-link" href="">Recipes</a>
@@ -152,7 +153,7 @@ class Page
     static function showHome($recipes)
     {
     ?>
-        <div class="d-flex justify-content-between align-content-start flex-wrap">
+        <div class="d-flex justify-content-between align-content-start flex-wrap" style="background-color: #FFFACD;">
             <?php
             foreach ($recipes as $recipe) {
                 self::showRecipeCard($recipe);
@@ -166,12 +167,19 @@ class Page
     static function showRecipeCard($recipe)
     {
     ?>
-        <div class="card mb-4" style="width: 18rem;">
+        <div class="card mt-3 mb-3" style="width: 18rem;" style="background-color: #fffce6;">
             <img src="<?=$recipe->getImageURL();?>" class="card-img-top" alt="mealPic">
-            <div class="card-body">
-                <h5 class="card-title"><?=$recipe->getMealName();?></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Order</a>
+            <div class="card-body" style="background-color: #fffce6;">
+                <h5 class="card-title d-flex justify-content-between"><?=$recipe->getMealName();?><span class="badge bg-warning" style="height: 1.5rem;"><?=$recipe->getCategory();?></span></h5>
+                <p class="card-text">
+                    <?php
+                        $tags = explode(",", $recipe->getTagStr());
+                        foreach ($tags as $tag) {
+                            echo "<span class='badge bg-secondary' style='margin-left:3px'>" . $tag . "</span>";
+                        }
+                    ?>
+                </p>
+                <a href="#" class="btn btn-success font-monospace"><i class="fa-solid fa-cart-plus"></i> Order</a>
             </div>
         </div>
 <?php

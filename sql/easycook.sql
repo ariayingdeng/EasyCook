@@ -11,6 +11,15 @@ create table user (
     address VARCHAR(200)
 ) Engine=InnoDB;
 
+create table recipes (
+	mealId VARCHAR(10),	
+	mealName VARCHAR(50),
+	mealInstructions VARCHAR(2000),
+	imageURL VARCHAR(250),
+	category VARCHAR(50),
+    tagStr VARCHAR(50)
+) Engine=InnoDB;
+
 create table orders (
 	id INT AUTO_INCREMENT PRIMARY KEY,	
 	totalPrice DECIMAL(10,2),
