@@ -23,6 +23,14 @@ class Validate
             error_log("Please enter your username.");
         }
 
+        //Validate the phone number, use filter_input with regexp 
+        $reg = array("options" => array("regexp" => "/^\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/"));
+        $filteredNumber = filter_input(INPUT_POST, 'phonenumber', FILTER_VALIDATE_REGEXP, $reg);
+        if (!$filteredNumber) {
+            $valid = false;
+            self::$messages['phonenumber'] = "Please enter a valid 10 digits phone number.";
+        }
+
         // Password should be a string with at least 8 characters
         // Password and password confirm needs to be same
         // $reg = array("options" => array("regexp" => "/^\.{8,}$/"));
@@ -45,5 +53,4 @@ class Validate
 
         return $valid;
     }
-
 }

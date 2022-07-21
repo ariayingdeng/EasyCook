@@ -496,3 +496,7 @@ Stack trace:
 #2 E:\CSIS\Summer2022\3280\3280-project\Home.php(22): RecipeService::saveRecipes()
 #3 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 93
+[22-Jul-2022 00:59:10 Europe/Berlin] Please enter the correct email address.
+[22-Jul-2022 00:59:10 Europe/Berlin] Please enter your password with at least 8 characters.
+[22-Jul-2022 01:14:18 Europe/Berlin] Please enter the correct email address.
+[22-Jul-2022 01:14:18 Europe/Berlin] Please enter your password with at least 8 characters.

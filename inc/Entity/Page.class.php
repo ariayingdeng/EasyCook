@@ -72,15 +72,15 @@ class Page
         <div class="pt-3" style="background-color: #FFFACD;">
             <?php
             if (!is_null(self::$notifications)) {
-                echo "<div class='alert alert-danger w-50 mx-auto' role='alert'>";
+                echo "<div class='alert alert-danger mx-auto text-center' role='alert' style='width: 45rem;'>";
                 echo self::$notifications;
                 echo "</div>";
             }
             ?>
-            <div class="card w-50 align-items-center mx-auto py-2" style="background-color: #fffce6;">
+            <div class="card align-items-center mx-auto py-2" style="background-color: #fffce6; width: 45rem;">
                 <form action="" method="post">
-                    <div class="card-body">
-                        <h2 class="card-title mb-3">Sign in to your account</h2>
+                    <div class="card-body" style="width: 30rem;">
+                        <h2 class="card-title mb-3 text-center">Sign in to your account</h2>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Your email address for login" required>
@@ -104,17 +104,17 @@ class Page
         <div class="pt-3" style="background-color: #FFFACD;">
             <?php
             if (!is_null(self::$notifications)) {
-                echo "<div class='alert alert-danger w-50 mx-auto' role='alert'><ul>";
+                echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
                 foreach (self::$notifications as $msg) {
                     echo "<li>" . $msg . "</li>";
                 }
                 echo "</ul></div>";
             }
             ?>
-            <div class="card w-50 align-items-center mx-auto py-2" style="background-color: #fffce6;">
+            <div class="card align-items-center mx-auto py-2" style="background-color: #fffce6; width: 45rem;">
                 <form action="" method="post">
-                    <div class="card-body">
-                        <h2 class="card-title mb-3">Create your account</h2>
+                    <div class="card-body" style="width: 30rem;">
+                        <h2 class="card-title mb-3 text-center">Create your account</h2>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Your email address for login" required>
@@ -124,8 +124,19 @@ class Page
                             <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
                         </div>
                         <div class="mb-3">
+                            <label for="phonenumber" class="form-label">Contact Number</label>
+                            <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="Enter your contact number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" required>
+                        </div>
+                        <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                            <span id="passwordInline" class="form-text">
+                                Must be at least 8 characters long.
+                            </span>
                         </div>
                         <div class="mb-3">
                             <label for="password2" class="form-label">Password Confirm</label>
@@ -168,15 +179,15 @@ class Page
     {
     ?>
         <div class="card mt-3 mb-3" style="width: 18rem;" style="background-color: #fffce6;">
-            <img src="<?=$recipe->getImageURL();?>" class="card-img-top" alt="mealPic">
+            <img src="<?= $recipe->getImageURL(); ?>" class="card-img-top" alt="mealPic">
             <div class="card-body" style="background-color: #fffce6;">
-                <h5 class="card-title d-flex justify-content-between"><?=$recipe->getMealName();?><span class="badge bg-warning" style="height: 1.5rem;"><?=$recipe->getCategory();?></span></h5>
+                <h5 class="card-title d-flex justify-content-between"><?= $recipe->getMealName(); ?><span class="badge bg-warning" style="height: 1.5rem;"><?= $recipe->getCategory(); ?></span></h5>
                 <p class="card-text">
                     <?php
-                        $tags = explode(",", $recipe->getTagStr());
-                        foreach ($tags as $tag) {
-                            echo "<span class='badge bg-secondary' style='margin-left:3px'>" . $tag . "</span>";
-                        }
+                    $tags = explode(",", $recipe->getTagStr());
+                    foreach ($tags as $tag) {
+                        echo "<span class='badge bg-secondary' style='margin-left:3px'>" . $tag . "</span>";
+                    }
                     ?>
                 </p>
                 <a href="#" class="btn btn-success font-monospace"><i class="fa-solid fa-cart-plus"></i> Order</a>

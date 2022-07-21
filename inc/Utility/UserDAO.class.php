@@ -16,12 +16,14 @@ class UserDAO
     static function createUser(User $user)
     {
 
-        $sql = "INSERT INTO user (email, username, password) VALUES (:email, :username, :password)";
+        $sql = "INSERT INTO user (email, username, password, phoneNumber, address) VALUES (:email, :username, :password, :phoneNumber, :address)";
 
         self::$db->query($sql);
         self::$db->bind(":email", $user->getEmail());
         self::$db->bind(":username", $user->getUsername());
         self::$db->bind(":password", $user->getPassword());
+        self::$db->bind(":phoneNumber", $user->getPhoneNumber());
+        self::$db->bind(":address", $user->getAddress());
 
         self::$db->execute();
 
@@ -41,13 +43,15 @@ class UserDAO
     // update the current user profile
     static function updateUser(User $user)
     {
-        $sql = "UPDATE user SET email=:email, username=:username, password=:password WHERE id=:id";
+        $sql = "UPDATE user SET email=:email, username=:username, password=:password, phoneNumber=:phoneNumber, address=:address WHERE id=:id";
 
         self::$db->query($sql);
         self::$db->bind(":id", $user->getId());
         self::$db->bind(":email", $user->getEmail());
         self::$db->bind(":username", $user->getUsername());
         self::$db->bind(":password", $user->getPassword());
+        self::$db->bind(":phoneNumber", $user->getPhoneNumber());
+        self::$db->bind(":address", $user->getAddress());
 
         self::$db->execute();
 
