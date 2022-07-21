@@ -37,6 +37,7 @@ create table inventoryItem (
 	measurePerPortion VARCHAR(250)
 ) Engine=InnoDB;
 
+
 create table orderItem (
 	id INT AUTO_INCREMENT PRIMARY KEY,	
 	orderID INT,
@@ -44,7 +45,11 @@ create table orderItem (
 	amount INT
 ) Engine=InnoDB;
 
-INSERT INTO user VALUES (1, 'aria@qq.com', 'Aria', '$2y$10$isKVCgfPBnl/oF/6reugj.MwGQkh6dwyaqIDpea5QZsMTBMeC5QjW', '1234567890', '88, New Westminster, BC');
+INSERT INTO user VALUES (1,"Aria@gmail.com","Aria","$2y$10$Wc2ccfQcNXgU7yStROapEunzjKDOBfCzknPPq2.iqUAy9DkLhCMPK","7783222323","address1");
+
+INSERT INTO user VALUES (2, 'aria@qq.com', 'Aria', '$2y$10$isKVCgfPBnl/oF/6reugj.MwGQkh6dwyaqIDpea5QZsMTBMeC5QjW', '1234567890', '88, New Westminster, BC');
+
+INSERT INTO orders VALUES (1,200,"https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg","BeaverTails","delicious dog",1);
 
 INSERT INTO inventoryItem VALUES
   (1, 'Potatoes', 6000, 0.99, "1 medium"),
@@ -114,3 +119,5 @@ INSERT INTO inventoryItem VALUES
   (65,'Custard Powder',10000,4.67,'340g'),
   (66,'Dark Chocolate',10000,10,'100g'),
   (67,'Creamed Corn',10000,28.95,'2kg');
+
+
