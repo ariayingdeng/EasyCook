@@ -496,3 +496,10 @@ Stack trace:
 #2 E:\CSIS\Summer2022\3280\3280-project\Home.php(22): RecipeService::saveRecipes()
 #3 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 93
+[21-Jul-2022 17:38:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:45
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(57): PDOAgent->query('SELECT * FROM r...')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeService.class.php(33): RecipeDAO::getRowCount()
+#2 C:\xampp\htdocs\3280Project\Home.php(22): RecipeService::saveRecipes()
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 45

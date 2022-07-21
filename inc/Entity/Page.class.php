@@ -179,10 +179,16 @@ class Page
                         }
                     ?>
                 </p>
-                <a href="#" class="btn btn-success font-monospace"><i class="fa-solid fa-cart-plus"></i> Order</a>
+                <a href='Order.php?action=<?=$recipe->getMealId()?>' class="btn btn-success font-monospace"><i class="fa-solid fa-cart-plus"></i> Order</a>
             </div>
         </div>
 <?php
+    }
+
+
+    //Order Page; 
+    static function showOrder($recipe){
+        
     }
 }
 
