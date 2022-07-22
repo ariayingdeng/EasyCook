@@ -503,3 +503,554 @@ Stack trace:
 #2 C:\xampp\htdocs\3280Project\Home.php(22): RecipeService::saveRecipes()
 #3 {main}
   thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 45
+[21-Jul-2022 18:13:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "RecipeDAO" not found in C:\xampp\htdocs\3280Project\Order.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 12
+[21-Jul-2022 18:14:42 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(14): RecipeDAO::getRecipe('52965')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:17:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(14): RecipeDAO::getRecipe('52965')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:25:19 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(14): RecipeDAO::getRecipe('52965')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:26:26 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(14): RecipeDAO::getRecipe('52965')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:29:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(14): RecipeDAO::getRecipe('52965')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:29:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(14): RecipeDAO::getRecipe('52965')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:30:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(15): RecipeDAO::getRecipe('52965')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:30:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(15): RecipeDAO::getRecipe('52965')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:30:40 Europe/Berlin] PHP Warning:  Undefined variable $recipeID in C:\xampp\htdocs\3280Project\Order.php on line 14
+[21-Jul-2022 18:30:40 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(14): RecipeDAO::getRecipe(NULL)
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:31:24 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\3280Project\Order.php on line 14
+[21-Jul-2022 18:31:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: RecipeDAO::getRecipe(): Argument #1 ($mealId) must be of type string, null given, called in C:\xampp\htdocs\3280Project\Order.php on line 14 and defined in C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php:35
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(14): RecipeDAO::getRecipe(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php on line 35
+[21-Jul-2022 18:31:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: PDOStatement::setFetchMode(): Argument #2 must be a valid class in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:81
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(81): PDOStatement->setFetchMode(8, 'Recipe')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(41): PDOAgent->getSingleResult()
+#2 C:\xampp\htdocs\3280Project\Order.php(14): RecipeDAO::getRecipe('52965')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 81
+[21-Jul-2022 18:41:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to private method RecipeService::getRecipe() from global scope in C:\xampp\htdocs\3280Project\Order.php:18
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 18:43:25 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\3280Project\Order.php on line 17
+[21-Jul-2022 18:46:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot access private property Recipe::$tagStr in C:\xampp\htdocs\3280Project\Order.php:17
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 17
+[21-Jul-2022 19:03:17 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient5 in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:03:24 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient5 in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:04:29 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient1 in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:04:46 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient1 in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:06:04 Europe/Berlin] PHP Warning:  Attempt to read property "strIngredient1" on array in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:06:14 Europe/Berlin] PHP Warning:  Attempt to read property "strIngredient1" on array in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:19:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(21): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:20:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(21): Page::showOrder(Object(stdClass), 'Ham')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:20:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(21): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:20:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(21): Page::showOrder(Object(stdClass), 'Brown Sugar')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:20:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(21): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:21:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(21): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:21:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getMealName() in C:\xampp\htdocs\3280Project\Order.php:19
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 19
+[21-Jul-2022 19:22:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getMealName() in C:\xampp\htdocs\3280Project\Order.php:19
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 19
+[21-Jul-2022 19:22:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getMealName() in C:\xampp\htdocs\3280Project\Order.php:19
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 19
+[21-Jul-2022 19:22:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getMealName() in C:\xampp\htdocs\3280Project\Order.php:19
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 19
+[21-Jul-2022 19:22:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(21): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:23:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(21): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:24:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(21): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:25:41 Europe/Berlin] PHP Warning:  Undefined variable $currentMeal in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:25:41 Europe/Berlin] PHP Warning:  Attempt to read property "meals" on null in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:25:41 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:25:41 Europe/Berlin] PHP Warning:  Attempt to read property "strIngredient1" on null in C:\xampp\htdocs\3280Project\Order.php on line 24
+[21-Jul-2022 19:25:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getImageURL() on null in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(NULL, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:25:46 Europe/Berlin] PHP Warning:  Undefined variable $currentMeal in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:25:46 Europe/Berlin] PHP Warning:  Attempt to read property "meals" on null in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:25:46 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\3280Project\Order.php on line 18
+[21-Jul-2022 19:25:46 Europe/Berlin] PHP Warning:  Attempt to read property "strIngredient1" on null in C:\xampp\htdocs\3280Project\Order.php on line 24
+[21-Jul-2022 19:25:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getImageURL() on null in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(NULL, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:26:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:26:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:26:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getMealName() in C:\xampp\htdocs\3280Project\Order.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 22
+[21-Jul-2022 19:26:53 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$getMealName in C:\xampp\htdocs\3280Project\Order.php on line 22
+[21-Jul-2022 19:26:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:27:06 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$MealName in C:\xampp\htdocs\3280Project\Order.php on line 22
+[21-Jul-2022 19:27:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:27:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:27:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:28:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:194
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 194
+[21-Jul-2022 19:29:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:30:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Beef Brisket')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:30:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Shortcrust Past...')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:30:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:30:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Beef Brisket')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:30:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Custard')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:30:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Custard')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:31:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Ham')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:31:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Ham')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:31:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Brown Sugar')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:31:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:31:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:31:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:32:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:32:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(24): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:32:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(23): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:33:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(23): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:33:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getCategory() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:196
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(23): Page::showOrder(Object(stdClass), 'Potatoes')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 196
+[21-Jul-2022 19:52:38 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 192
+[21-Jul-2022 19:52:54 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 192
+[21-Jul-2022 19:52:59 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient0 in C:\xampp\htdocs\3280Project\Order.php on line 21
+[21-Jul-2022 19:52:59 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 192
+[21-Jul-2022 19:55:21 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient in C:\xampp\htdocs\3280Project\Order.php on line 21
+[21-Jul-2022 19:55:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + int in C:\xampp\htdocs\3280Project\Order.php:23
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 23
+[21-Jul-2022 19:55:51 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient in C:\xampp\htdocs\3280Project\Order.php on line 21
+[21-Jul-2022 19:55:51 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 192
+[21-Jul-2022 19:56:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 192
+[21-Jul-2022 19:57:11 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient in C:\xampp\htdocs\3280Project\Order.php on line 21
+[21-Jul-2022 19:57:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + int in C:\xampp\htdocs\3280Project\Order.php:23
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 23
+[21-Jul-2022 19:57:19 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient in C:\xampp\htdocs\3280Project\Order.php on line 21
+[21-Jul-2022 19:57:20 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient in C:\xampp\htdocs\3280Project\Order.php on line 21
+[21-Jul-2022 19:57:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + int in C:\xampp\htdocs\3280Project\Order.php:23
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 23
+[21-Jul-2022 19:58:20 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in C:\xampp\htdocs\3280Project\Order.php:23
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 23
+[21-Jul-2022 19:58:26 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$strIngredient0 in C:\xampp\htdocs\3280Project\Order.php on line 24
+[21-Jul-2022 21:17:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:200
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(45): Page::showOrder(Object(stdClass), Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 200
+[21-Jul-2022 22:03:42 Europe/Berlin] PHP Warning:  Undefined array key "Shortcrust Pastry" in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 239
+[21-Jul-2022 22:03:53 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 17
+[21-Jul-2022 22:03:55 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 17
+[21-Jul-2022 22:04:05 Europe/Berlin] PHP Warning:  Undefined array key "Shortcrust Pastry" in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 239
+[21-Jul-2022 22:14:05 Europe/Berlin] PHP Warning:  Undefined array key "Shortcrust Pastry" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:14:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: InventoryItem * null in C:\xampp\htdocs\3280Project\Order.php:38
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:15:21 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 19
+[21-Jul-2022 22:15:36 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: InventoryItem * string in C:\xampp\htdocs\3280Project\Order.php:38
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:16:12 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:16:12 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:16:12 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:18:17 Europe/Berlin] PHP Warning:  Undefined array key "Shortcrust Pastry" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:18:17 Europe/Berlin] PHP Warning:  Undefined array key "Muscovado Sugar" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:18:17 Europe/Berlin] PHP Warning:  Undefined array key "Vanilla Extract" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:18:17 Europe/Berlin] PHP Warning:  Undefined array key "Single Cream" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:20:00 Europe/Berlin] PHP Warning:  Undefined array key "Minced Beef" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:20:00 Europe/Berlin] PHP Warning:  Undefined array key "Creamed Corn" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:21:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getID() on bool in C:\xampp\htdocs\3280Project\Order.php:38
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:29:26 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:29:26 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:29:26 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:29:48 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:71
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(71): PDOStatement->execute()
+#1 C:\xampp\htdocs\3280Project\inc\Utility\InventoryItemDAO.class.php(15): PDOAgent->execute()
+#2 C:\xampp\htdocs\3280Project\Order.php(37): InventoryItemDAO::getInventoryItemByName('Potatoes')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 71
+[21-Jul-2022 22:30:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:38
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:31:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:38
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:32:09 Europe/Berlin] PHP Warning:  Undefined array key "Vegetable Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:32:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:38
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:32:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:38
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:33:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:39
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 39
+[21-Jul-2022 22:33:39 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:71
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(71): PDOStatement->execute()
+#1 C:\xampp\htdocs\3280Project\inc\Utility\InventoryItemDAO.class.php(15): PDOAgent->execute()
+#2 C:\xampp\htdocs\3280Project\Order.php(37): InventoryItemDAO::getInventoryItemByName('Ham')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 71
+[21-Jul-2022 22:34:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:71
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(71): PDOStatement->execute()
+#1 C:\xampp\htdocs\3280Project\inc\Utility\InventoryItemDAO.class.php(16): PDOAgent->execute()
+#2 C:\xampp\htdocs\3280Project\Order.php(37): InventoryItemDAO::getInventoryItemByName('Ham')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 71
+[21-Jul-2022 22:37:21 Europe/Berlin] PHP Warning:  Undefined array key "Bay Leaves" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:37:21 Europe/Berlin] PHP Warning:  Undefined array key "Frozen Peas" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:39:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:38
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:39:33 Europe/Berlin] PHP Warning:  Undefined array key "Bay Leaves" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:39:33 Europe/Berlin] PHP Warning:  Undefined array key "Frozen Peas" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:40:05 Europe/Berlin] PHP Warning:  Undefined array key "Bay Leaves" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:40:05 Europe/Berlin] PHP Warning:  Undefined array key "Frozen Peas" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:40:12 Europe/Berlin] PHP Warning:  Undefined array key "Bay Leaves" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:40:12 Europe/Berlin] PHP Warning:  Undefined array key "Frozen Peas" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:45:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:71
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(71): PDOStatement->execute()
+#1 C:\xampp\htdocs\3280Project\inc\Utility\InventoryItemDAO.class.php(16): PDOAgent->execute()
+#2 C:\xampp\htdocs\3280Project\Order.php(37): InventoryItemDAO::getInventoryItemByName('Potatoes')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 71
+[21-Jul-2022 22:47:16 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:47:16 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:47:16 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:51:29 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:51:29 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:51:29 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:54:51 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:54:51 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:54:51 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:56:17 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:56:17 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:56:17 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:56:38 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:56:38 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:56:38 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:57:27 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:57:27 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:57:27 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:59:01 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:59:01 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:59:01 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:59:17 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:59:17 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 22:59:17 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:00:11 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:00:11 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:00:11 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:00:29 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:00:29 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:00:29 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:01:01 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:01:01 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:01:01 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:02:54 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:02:54 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:02:54 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:16 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:16 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:16 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:27 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:27 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:27 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:31 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:31 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:31 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:38 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:38 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:03:38 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:04:51 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:04:51 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:04:51 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:05:05 Europe/Berlin] PHP Warning:  Undefined array key "Olive Oil" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:05:05 Europe/Berlin] PHP Warning:  Undefined array key "Garlic Clove" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:05:05 Europe/Berlin] PHP Warning:  Undefined array key "Maple Syrup" in C:\xampp\htdocs\3280Project\Order.php on line 38
+[21-Jul-2022 23:06:03 Europe/Berlin] PHP Warning:  Undefined array key "OliveOil" in C:\xampp\htdocs\3280Project\Order.php on line 39
+[21-Jul-2022 23:06:03 Europe/Berlin] PHP Warning:  Undefined array key "GarlicClove" in C:\xampp\htdocs\3280Project\Order.php on line 39
+[21-Jul-2022 23:06:03 Europe/Berlin] PHP Warning:  Undefined array key "MapleSyrup" in C:\xampp\htdocs\3280Project\Order.php on line 39
+[21-Jul-2022 23:08:55 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Page::showOrderDetails(), 0 passed in C:\xampp\htdocs\3280Project\Order.php on line 42 and exactly 2 expected in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:237
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(42): Page::showOrderDetails()
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 237
+[21-Jul-2022 23:09:59 Europe/Berlin] PHP Warning:  Undefined array key "Eggs" in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 239
+[21-Jul-2022 23:10:09 Europe/Berlin] PHP Warning:  Undefined array key "Eggs" in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 239
+[21-Jul-2022 23:32:02 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\3280Project\Order.php on line 41
+[21-Jul-2022 23:32:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 41
+[21-Jul-2022 23:35:34 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\3280Project\Order.php on line 41
+[21-Jul-2022 23:35:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 41
+[21-Jul-2022 23:49:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 41
+[21-Jul-2022 23:51:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 41
+[21-Jul-2022 23:53:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 41
+[22-Jul-2022 00:29:50 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 19
+[22-Jul-2022 00:30:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in C:\xampp\htdocs\3280Project\Order.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 41
+[22-Jul-2022 01:09:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class User could not be converted to string in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:65
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(65): PDOStatement->bindValue(':userID', Object(User), 2)
+#1 C:\xampp\htdocs\3280Project\inc\Utility\OrderDAO.class.php(22): PDOAgent->bind(':userID', Object(User))
+#2 C:\xampp\htdocs\3280Project\Order.php(66): OrderDAO::createOrder(Object(Order))
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 65
+[22-Jul-2022 01:15:16 Europe/Berlin] PHP Warning:  Undefined array key "orderTotal" in C:\xampp\htdocs\3280Project\Order.php on line 61
+[22-Jul-2022 02:07:16 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 254
+[22-Jul-2022 02:33:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:247
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\Order.php(59): Page::showOrderDetails(Array, 613.7)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 247
+[22-Jul-2022 02:38:49 Europe/Berlin] PHP Warning:  Undefined array key "allIngredients" in C:\xampp\htdocs\3280Project\Order.php on line 73
+[22-Jul-2022 05:37:17 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 32
+[22-Jul-2022 05:37:43 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 255
+[22-Jul-2022 05:46:22 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\3280Project\Order.php:73
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 73
+[22-Jul-2022 05:56:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\3280Project\Order.php:73
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 73
+[22-Jul-2022 06:07:43 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 32
+[22-Jul-2022 06:31:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "OrderItem" not found in C:\xampp\htdocs\3280Project\Order.php:79
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\Order.php on line 79

@@ -52,7 +52,7 @@ class RecipeService
         }
     }
 
-    private static function getRecipe($mealName)
+    public static function getRecipe($mealName)
     {
         $recipeURL = self::$recipeURLPre . $mealName;
         $data = file_get_contents($recipeURL);

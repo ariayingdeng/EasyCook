@@ -8,10 +8,10 @@ class InventoryItemDAO{
         self::$db = new PDOAgent("InventoryItem");
     } 
     
-    static function getInventoryItem($id){
-        $sql = "SELECT * FROM inventoryitem WHERE id=:id"; 
+    static function getInventoryItemByName($itemName){
+        $sql = "SELECT * FROM inventoryitem WHERE itemName=:itemName"; 
         self::$db->query($sql);
-        self::$db->bind(":id",$id);
+        self::$db->bind(":itemName",(string)$itemName);
         self::$db->execute();
         return self::$db->getSingleResult();
     }

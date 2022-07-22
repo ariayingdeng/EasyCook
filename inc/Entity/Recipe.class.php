@@ -41,7 +41,6 @@ class Recipe
         return $this->tagStr;
     }
 
-
     // Setters
     function setMealId($value)
     {
