@@ -196,31 +196,44 @@ class Page
     <?php
     }
 
+    static function showOrderRecipes($recipes)
+    {
+    ?>
+        <div style="background-color: #FFFACD;">
+            <h5 class="d-flex justify-content-between p-3">The meals that you ordered:</h5>
+            <?php
+            foreach ($recipes as $recipe) {
+                self::showOrderRecipeCard($recipe);
+            }
+            ?>
+        </div>
+    <?php
+    }
+
     static function showOrderRecipeCard($recipe)
     {
     ?>
-        <div class="card mb-3" style="background-color: #fffce6;">
+        <div class="card mb-5 rounded" style="background-color: #fffce6;">
             <div class="row g-0">
                 <div class="col-md-3">
-                    <img src="<?= $recipe->getImageURL(); ?>" class="img-fluid rounded-start" alt="MealPic">
+                    <img src="<?= $recipe->getImageURL(); ?>" class="rounded-start" style="max-width: 100%; height: 100%;" alt="MealPic">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-9">
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-between"><?= $recipe->getMealName(); ?><span class="badge bg-warning" style="height: 1.5rem;"><?= $recipe->getCategory(); ?></span></h5>
                         <p class="card-text"><?= $recipe->getMealInstructions(); ?></p>
-                        <p class="card-text">
+                        <p class="card-text d-flex justify-content-between">
+                        <span>
                             <?php
                             $tags = explode(",", $recipe->getTagStr());
                             foreach ($tags as $tag) {
-                                echo "<span class='badge bg-secondary' style='margin-right:5px'>" . $tag . "</span>";
+                                echo "<span class='badge bg-secondary' style='margin-right:10px'>" . $tag . "</span>";
                             }
                             ?>
+                        </span>
+                        <a href="<?= $recipe->getYoutubeLink(); ?>" type="button" class="btn btn-info" target="_blank">Check YouTube Video</a>
                         </p>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UVAMAoA2_WU">
-                    </iframe>
                 </div>
             </div>
         </div>

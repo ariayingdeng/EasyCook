@@ -25,8 +25,8 @@ if (LoginManager::verifyLogin()) {
     $user = UserDAO::getUser($_SESSION['loggedemail']);
 
     Page::showHeader();
-    $recipe = RecipeDAO::getRecipe("Poutine");
-    Page::showOrderRecipeCard($recipe);
+    $recipes = RecipeDAO::getAllRecipes();
+    Page::showOrderRecipes($recipes);
 
 } else {
     header('Location: Login.php');
