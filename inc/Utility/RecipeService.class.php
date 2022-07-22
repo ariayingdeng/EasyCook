@@ -30,7 +30,7 @@ class RecipeService
 
     static function saveRecipes()
     {
-        if (RecipeDAO::getRowCount() < 12) {
+        if (RecipeDAO::getRowCount() < 1) {
             $data = file_get_contents(self::$recipesURL);
             $recipesRaw = json_decode($data);
             foreach ($recipesRaw->meals as $recipeRaw) {

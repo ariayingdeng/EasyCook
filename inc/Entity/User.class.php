@@ -4,7 +4,9 @@
 	id INT AUTO_INCREMENT PRIMARY KEY,	
 	email VARCHAR(50),
     username VARCHAR(50),
-	password VARCHAR(250)	
+	password VARCHAR(250),
+    phoneNumber VARCHAR(10),
+    address VARCHAR(200)
 */
 
 class User
@@ -15,6 +17,8 @@ class User
     private $email;
     private $username;
     private $password;
+    private $phoneNumber;
+    private $address;
 
     //Getters
     function getId()
@@ -37,10 +41,25 @@ class User
         return $this->password;
     }
 
+    function getPhoneNumber()
+    {
+        return $this->phoneNumber;
+    }
+
+    function getAddress()
+    {
+        return $this->address;
+    }
+
     //Setters
     function setEmail($value)
     {
         $this->email = $value;
+    }
+
+    function setUsername($value)
+    {
+        $this->username = $value;
     }
 
     function setPassword($value)
@@ -49,9 +68,14 @@ class User
         $this->password = password_hash($value, PASSWORD_DEFAULT);
     }
 
-    function setUsername($value)
+    function setPhoneNumber($value)
     {
-        $this->username = $value;
+        $this->phoneNumber = $value;
+    }
+
+    function setAddress($value)
+    {
+        $this->address = $value;
     }
 
     //Verify the password
@@ -60,3 +84,5 @@ class User
         return password_verify($passwordToVerify, $this->password);
     }
 }
+
+?>

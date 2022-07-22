@@ -16,6 +16,8 @@ if (!empty($_POST) && $_POST["submit"] == "Register") {
         $newUser = new User();
         $newUser->setEmail(trim($_POST["email"]));
         $newUser->setUsername(trim($_POST["username"]));
+        $newUser->setPhoneNumber(trim($_POST["phonenumber"]));
+        $newUser->setAddress(trim($_POST["address"]));
         $newUser->setPassword($_POST["password"]);
     
         UserDAO::createUser($newUser);
