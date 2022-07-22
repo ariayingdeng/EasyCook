@@ -563,3 +563,4 @@ Stack trace:
 [22-Jul-2022 06:43:12 Europe/Berlin] PHP Warning:  Undefined property: Recipe::$getYoutubeLink in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 236
 [22-Jul-2022 06:44:27 Europe/Berlin] PHP Warning:  Undefined property: Recipe::$getImageURL in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 234
 [22-Jul-2022 06:44:27 Europe/Berlin] PHP Warning:  Undefined property: Recipe::$getImageURL in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 234
+>>>>>>> 689bc54fd6df2a8b1a80f568455fd63289233c2f

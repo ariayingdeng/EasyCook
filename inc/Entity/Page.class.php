@@ -190,7 +190,7 @@ class Page
                     }
                     ?>
                 </p>
-                <a href="#" class="btn btn-success font-monospace"><i class="fa-solid fa-cart-plus"></i> Order</a>
+                <a href='Order.php?mealName=<?=$recipe->getMealName()?>' class="btn btn-success font-monospace"><i class="fa-solid fa-cart-plus"></i> Order</a>
             </div>
         </div>
     <?php
@@ -238,6 +238,82 @@ class Page
             </div>
         </div>
 <?php
+    }
+
+
+    //Order Page; 
+    static function showOrder($recipe,$ingredents)
+    {
+       
+    ?>
+      <div class="pt-3" style="background-color: #FFFACD;">
+         <div class="card w-50 align-items-center mx-auto py-2" style="background-color: #fffce6;">
+                <form action="" method="post">
+                    <div class="card-body">
+                        <h2 class="card-title mb-3">These are our recommended ingredients:</h2>
+                        <h5 class="card-title mb-3">Customise your ingredient for  <?=$recipe->strMeal?></h2>
+
+                        <?php 
+                            foreach($ingredents as $ingredent=>$amount){
+                                echo '<div class="input-group mb-3">';
+                                echo '<span class="input-group-text">'. $ingredent .'</span>';
+                                echo '<input type="number" class="form-control" name='.str_replace(' ', '', $ingredent).' placeholder="0" required>';
+                                echo '</div>';
+                        }
+                        ?>
+                     
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" name="checkout" class="btn btn-success" value="checkout">
+                    </div>
+                </form>
+            </div>
+        </div>
+    <?php
+    }
+
+    static function showOrderDetails($ingredents,$total){
+        $stringOfIngredients="";
+        ?>
+        <div class="pt-3" style="background-color: #FFFACD;">
+            <div class="card w-50 align-items-center mx-auto py-2" style="background-color: #fffce6;">
+                <div class="card-body">
+                    <h2 class="card-title mb-3">These are the ingredents you select:</h2>
+                    <form action="" method="post">
+                    <table class="table">                 
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Ingredient</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                            $i =1; 
+                            foreach($ingredents as $ingredent=>$price){
+                                echo "<tr>";
+                                echo ' <th scope="row">'.$i.'</th>';
+                                echo "<td>$ingredent</td>";
+                                echo "<td>".$_POST[str_replace(' ', '', $ingredent)]."</td>";
+                                echo "<td>$price</td>";
+                                echo "</tr>";
+                                $i++;
+                                echo ' <input type="hidden" name='.str_replace(' ', '', $ingredent).' value='.$_POST[str_replace(' ', '', $ingredent)].'>';
+                            }
+                        ?>
+                        </tbody>
+                    </table>
+                    total: <?=$total?>
+                        <input type="hidden" name="orderTotal" value=<?=$total?>>
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" name="confirm" class="btn btn-success" value="confirm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <?php
     }
 }
 

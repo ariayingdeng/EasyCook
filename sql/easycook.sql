@@ -24,7 +24,7 @@ create table recipes (
 create table orders (
 	id INT AUTO_INCREMENT PRIMARY KEY,	
 	totalPrice DECIMAL(10,2),
-	imageURL VARCHAR(250),
+	imageURL VARCHAR(500),
 	mealName VARCHAR(50),
 	mealInstructions VARCHAR(2000),
 	userID INT
@@ -119,6 +119,7 @@ INSERT INTO inventoryItem VALUES
   (64,'Double Cream',10000,2.97,'1L'),
   (65,'Custard Powder',10000,4.67,'340g'),
   (66,'Dark Chocolate',10000,10,'100g'),
-  (67,'Creamed Corn',10000,28.95,'2kg');
+  (67,'Creamed Corn',10000,28.95,'2kg'),
+  (68,'Garlic',10000,5,'1kg');
 
 
