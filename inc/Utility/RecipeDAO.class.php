@@ -16,7 +16,7 @@ class RecipeDAO
     static function saveRecipe(Recipe $recipe)
     {
 
-        $sql = "INSERT INTO recipes (mealId, mealName, mealInstructions, imageURL, category, tagStr) VALUES (:mealId, :mealName, :mealInstructions, :imageURL, :category, :tagStr)";
+        $sql = "INSERT INTO recipes (mealId, mealName, mealInstructions, imageURL, category, tagStr, youtubeLink) VALUES (:mealId, :mealName, :mealInstructions, :imageURL, :category, :tagStr, :youtubeLink)";
 
         self::$db->query($sql);
         self::$db->bind(":mealId", $recipe->getMealId());
@@ -25,18 +25,19 @@ class RecipeDAO
         self::$db->bind(":imageURL", $recipe->getImageURL());
         self::$db->bind(":category", $recipe->getCategory());
         self::$db->bind(":tagStr", $recipe->getTagStr());
+        self::$db->bind(":youtubeLink", $recipe->getYoutubeLink());
 
         self::$db->execute();
 
         return self::$db->lastInsertedId();
     }
 
-    // to get recipe details
-    static function getRecipe(string $mealId)
+    // to get recipe details with mealName
+    static function getRecipe(string $mealName)
     {
-        $sql = "SELECT * FROM recipes WHERE mealId = :mealId";
+        $sql = "SELECT * FROM recipes WHERE mealName = :mealName";
         self::$db->query($sql);
-        self::$db->bind(":mealId", $mealId);
+        self::$db->bind(":mealName", $mealName);
         self::$db->execute();
         return self::$db->getSingleResult();
     }

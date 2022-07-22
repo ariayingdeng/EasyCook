@@ -17,7 +17,8 @@ create table recipes (
 	mealInstructions VARCHAR(2000),
 	imageURL VARCHAR(250),
 	category VARCHAR(50),
-    tagStr VARCHAR(50)
+    tagStr VARCHAR(50),
+    youtubeLink VARCHAR(100)
 ) Engine=InnoDB;
 
 create table orders (

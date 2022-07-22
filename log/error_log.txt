@@ -500,3 +500,28 @@ Stack trace:
 [22-Jul-2022 00:59:10 Europe/Berlin] Please enter your password with at least 8 characters.
 [22-Jul-2022 01:14:18 Europe/Berlin] Please enter the correct email address.
 [22-Jul-2022 01:14:18 Europe/Berlin] Please enter your password with at least 8 characters.
+[22-Jul-2022 02:27:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:205
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(28): Page::showOrderRecipeCard(Object(stdClass))
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 205
+[22-Jul-2022 02:28:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:205
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(29): Page::showOrderRecipeCard(Object(stdClass))
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 205
+[22-Jul-2022 02:28:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:205
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(29): Page::showOrderRecipeCard(Object(stdClass))
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 205
+[22-Jul-2022 02:28:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:205
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(29): Page::showOrderRecipeCard(Object(stdClass))
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 205
+[22-Jul-2022 02:28:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getImageURL() in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:205
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(29): Page::showOrderRecipeCard(Object(stdClass))
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 205

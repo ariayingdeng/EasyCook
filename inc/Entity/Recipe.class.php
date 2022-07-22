@@ -9,6 +9,7 @@ class Recipe
     private $imageURL;
     private $category;
     private $tagStr;
+    private $youtubeLink;
 
     // Getters
     function getMealId()
@@ -41,6 +42,11 @@ class Recipe
         return $this->tagStr;
     }
 
+    function getYoutubeLink()
+    {
+        return $this->youtubeLink;
+    }
+
 
     // Setters
     function setMealId($value)
@@ -55,7 +61,7 @@ class Recipe
 
     function setMealInstructions($value)
     {
-        $this->mealInstructions = $value;
+        $this->mealInstructions = nl2br($value);
     }
 
     function setImageURL($value)
@@ -71,6 +77,11 @@ class Recipe
     function setTags($value)
     {
         $this->tagStr = $value;
+    }
+
+    function setYoutubeLink($value)
+    {
+        $this->youtubeLink = str_replace("watch?v=", "embed/", $value);
     }
 }
 

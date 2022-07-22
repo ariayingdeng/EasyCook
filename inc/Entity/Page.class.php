@@ -34,7 +34,7 @@ class Page
                                 <a class="nav-link active" aria-current="page" href="Home.php">Home</a>
                             </li>
                             <li class="nav-item fw-bold">
-                                <a class="nav-link" href="">Recipes</a>
+                                <a class="nav-link" href="Recipes.php">Recipes</a>
                             </li>
                             <li class="nav-item fw-bold">
                                 <a class="nav-link" href="" tabindex="-1" aria-disabled="true">Orders</a>
@@ -179,18 +179,49 @@ class Page
     {
     ?>
         <div class="card mt-3 mb-3" style="width: 18rem;" style="background-color: #fffce6;">
-            <img src="<?= $recipe->getImageURL(); ?>" class="card-img-top" alt="mealPic">
+            <img src="<?= $recipe->getImageURL(); ?>" class="card-img-top" alt="MealPic">
             <div class="card-body" style="background-color: #fffce6;">
                 <h5 class="card-title d-flex justify-content-between"><?= $recipe->getMealName(); ?><span class="badge bg-warning" style="height: 1.5rem;"><?= $recipe->getCategory(); ?></span></h5>
                 <p class="card-text">
                     <?php
                     $tags = explode(",", $recipe->getTagStr());
                     foreach ($tags as $tag) {
-                        echo "<span class='badge bg-secondary' style='margin-left:3px'>" . $tag . "</span>";
+                        echo "<span class='badge bg-secondary' style='margin-right:3px'>" . $tag . "</span>";
                     }
                     ?>
                 </p>
                 <a href="#" class="btn btn-success font-monospace"><i class="fa-solid fa-cart-plus"></i> Order</a>
+            </div>
+        </div>
+    <?php
+    }
+
+    static function showOrderRecipeCard($recipe)
+    {
+    ?>
+        <div class="card mb-3" style="background-color: #fffce6;">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img src="<?= $recipe->getImageURL(); ?>" class="img-fluid rounded-start" alt="MealPic">
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-between"><?= $recipe->getMealName(); ?><span class="badge bg-warning" style="height: 1.5rem;"><?= $recipe->getCategory(); ?></span></h5>
+                        <p class="card-text"><?= $recipe->getMealInstructions(); ?></p>
+                        <p class="card-text">
+                            <?php
+                            $tags = explode(",", $recipe->getTagStr());
+                            foreach ($tags as $tag) {
+                                echo "<span class='badge bg-secondary' style='margin-right:5px'>" . $tag . "</span>";
+                            }
+                            ?>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UVAMAoA2_WU">
+                    </iframe>
+                </div>
             </div>
         </div>
 <?php
