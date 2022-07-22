@@ -257,7 +257,7 @@ class Page
                             foreach($ingredents as $ingredent=>$amount){
                                 echo '<div class="input-group mb-3">';
                                 echo '<span class="input-group-text">'. $ingredent .'</span>';
-                                echo '<input type="number" class="form-control" name='.str_replace(' ', '', $ingredent).' placeholder="0" required>';
+                                echo '<input type="number" class="form-control" name='.str_replace(' ', '', $ingredent).' placeholder="1" value="1" required>';
                                 echo '</div>';
                         }
                         ?>
@@ -304,7 +304,7 @@ class Page
                         ?>
                         </tbody>
                     </table>
-                    total: <?=$total?>
+                    Total Price: <?=$total?>
                         <input type="hidden" name="orderTotal" value=<?=$total?>>
                         <div class="d-flex justify-content-center">
                             <input type="submit" name="confirm" class="btn btn-success" value="confirm">

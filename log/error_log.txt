@@ -564,3 +564,18 @@ Stack trace:
 [22-Jul-2022 06:44:27 Europe/Berlin] PHP Warning:  Undefined property: Recipe::$getImageURL in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 234
 [22-Jul-2022 06:44:27 Europe/Berlin] PHP Warning:  Undefined property: Recipe::$getImageURL in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 234
 >>>>>>> 689bc54fd6df2a8b1a80f568455fd63289233c2f
+[22-Jul-2022 07:29:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php:45
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php(58): PDOAgent->query('SELECT * FROM r...')
+#1 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(10): RecipeDAO::getRowCount()
+#2 E:\CSIS\Summer2022\3280\3280-project\Home.php(22): RecipeService::saveRecipes()
+#3 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 45
+[22-Jul-2022 07:32:48 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:12) in E:\CSIS\Summer2022\3280\3280-project\Order.php on line 86
+[22-Jul-2022 07:49:35 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:12) in E:\CSIS\Summer2022\3280\3280-project\Order.php on line 86
+[22-Jul-2022 07:49:42 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in E:\CSIS\Summer2022\3280\3280-project\Order.php on line 33
+[22-Jul-2022 07:49:45 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in E:\CSIS\Summer2022\3280\3280-project\Order.php on line 33
+[22-Jul-2022 07:49:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerPortion() on bool in E:\CSIS\Summer2022\3280\3280-project\Order.php:56
+Stack trace:
+#0 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\Order.php on line 56

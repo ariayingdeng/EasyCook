@@ -7,7 +7,7 @@ class OrderDAO
 
     static function init()
     {
-        self::$db = new PDOAgent("order");
+        self::$db = new PDOAgent("Order");
         self::$db = new PDOAgent("OrderItem");
     }
 
