@@ -21,9 +21,6 @@ if (LoginManager::verifyLogin()==false){
     header("Location:Login.php");
  }
 
-
-
-
 RecipeDAO::init();
 UserDAO::init();
 OrderDAO::init();
@@ -32,7 +29,6 @@ InventoryItemDAO::init();
 
 $currentMealName = RecipeService::getRecipe($_GET['mealName']);
 $currentMeal = $currentMealName->meals[0];
-
 
 
 // push all ingredient(name) into array
@@ -45,7 +41,6 @@ for ($i=1;$i<21;$i++){
 }
 
 
-Page::showHeader();
 // calculate total 
 // render the Page 
 $total = 0;
@@ -57,6 +52,7 @@ if (isset($_POST['checkout'])){
         $ingredentArray[$ingredient]= $priceOFEachIngredents;
         $total+= $priceOFEachIngredents ;
     }
+    Page::showHeader();
     Page::showOrderDetails($ingredentArray,$total);
 } else if (isset($_POST['confirm'])){
 
@@ -83,13 +79,11 @@ if (isset($_POST['checkout'])){
         $orderItem->setAmount( $eachAmount );
         OrderDAO::createOrderItem($orderItem);
     }
+
     header("Location:Home.php");
    
 } else {
+    Page::showHeader();
     Page::showOrder($currentMeal,$ingredentArray);
 }
 Page::showFooter();
-
-
-
-?>
