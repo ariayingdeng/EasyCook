@@ -13,7 +13,7 @@ class OrderDAO
 
     static function createOrder(Order $order)
     {
-        $sql = "INSERT INTO orders (totalPrice, imageURL, mealName, mealInstructions, userID) VALUES (:totalPrice, :imageURL, :mealName, :mealInstructions, :userID)";
+        $sql = "INSERT INTO orders (totalPrice, imageURL, mealName, mealInstructions, userID,date) VALUES (:totalPrice, :imageURL, :mealName, :mealInstructions, :userID,:date)";
 
         self::$db->query($sql);
         self::$db->bind(":totalPrice", $order->getTotalPrice());
@@ -21,6 +21,7 @@ class OrderDAO
         self::$db->bind(":mealName", $order->getMealName());
         self::$db->bind(":mealInstructions", $order->getMealInstructions());
         self::$db->bind(":userID", $order->getUserID());
+        self::$db->bind(":date", $order->getDate());
         self::$db->execute();
         return self::$db->lastInsertedId();
     }
@@ -52,6 +53,15 @@ class OrderDAO
         $sql = "SELECT * FROM orderitem WHERE orderID=:orderID";
         self::$db->query($sql);
         self::$db->bind(":orderID",$orderID);
+        self::$db->execute();
+        return self::$db->getSetResult();
+    }
+
+    static function getOrderByUserID($userID)
+    {
+        $sql = "SELECT * FROM orders WHERE userID=:userID";
+        self::$db->query($sql);
+        self::$db->bind(":userID",$userID);
         self::$db->execute();
         return self::$db->getSetResult();
     }

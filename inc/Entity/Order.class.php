@@ -8,6 +8,7 @@ class Order{
     private $mealName; 
     private $mealInstructions; 
     private $userID;
+    private $date;
 
     function setID($id){
         $this->id = $id;
@@ -26,6 +27,9 @@ class Order{
     }
     function setUserID($userID){
         $this->userID = $userID;
+    }
+    function setDate($date){
+        $this->date= $date;
     }
 
     function getID(){
@@ -46,11 +50,9 @@ class Order{
     function getUserID(){
         return $this->userID;
     }
-
-
-
-
-
+    function getDate(){
+        return $this->date;
+    }
 
 }
 

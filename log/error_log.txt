@@ -579,3 +579,142 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\Order.php on line 56
+[28-Jul-2022 18:24:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:45
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(58): PDOAgent->query('SELECT * FROM r...')
+#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeService.class.php(10): RecipeDAO::getRowCount()
+#2 C:\xampp\htdocs\3280Project\Home.php(22): RecipeService::saveRecipes()
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 45
+[28-Jul-2022 18:47:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "OrderDAO" not found in C:\xampp\htdocs\3280Project\OrderHistory.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\3280Project\OrderHistory.php on line 22
+[28-Jul-2022 18:47:56 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\3280Project\OrderHistory.php on line 24
+[28-Jul-2022 18:49:44 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\3280Project\OrderHistory.php on line 24
+[28-Jul-2022 18:49:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:37
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(25): UserDAO::getUser('Aria@gmail.com')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 37
+[28-Jul-2022 18:49:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:37
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(25): UserDAO::getUser('Aria@gmail.com')
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 37
+[28-Jul-2022 18:50:18 Europe/Berlin] PHP Warning:  Undefined property: User::$userid in C:\xampp\htdocs\3280Project\OrderHistory.php on line 27
+[28-Jul-2022 18:53:21 Europe/Berlin] PHP Fatal error:  Class "OrderItem" not found in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 89
+[28-Jul-2022 18:53:37 Europe/Berlin] PHP Fatal error:  Class "OrderItem" not found in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 89
+[28-Jul-2022 18:53:54 Europe/Berlin] PHP Fatal error:  Class "OrderItem" not found in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 89
+[28-Jul-2022 18:54:28 Europe/Berlin] PHP Warning:  Undefined variable $orderListFromThisUser in C:\xampp\htdocs\3280Project\OrderHistory.php on line 29
+[28-Jul-2022 18:54:43 Europe/Berlin] PHP Fatal error:  Class "OrderItem" not found in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 88
+[28-Jul-2022 18:55:42 Europe/Berlin] PHP Fatal error:  Class "OrderItem" not found in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 88
+[28-Jul-2022 18:56:27 Europe/Berlin] PHP Fatal error:  Class "OrderItem" not found in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 88
+[28-Jul-2022 18:57:16 Europe/Berlin] PHP Fatal error:  Class "OrderItem" not found in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 88
+[28-Jul-2022 18:57:22 Europe/Berlin] PHP Fatal error:  Class "Order" not found in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 88
+[28-Jul-2022 18:58:36 Europe/Berlin] PHP Fatal error:  Class "OrderItem" not found in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 88
+[28-Jul-2022 19:11:54 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 320 in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 340
+[28-Jul-2022 19:23:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\3280Project\inc\Entity\Order.class.php on line 33
+[28-Jul-2022 20:29:32 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 28
+[28-Jul-2022 20:29:32 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 28 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(28): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
+[28-Jul-2022 20:29:33 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 28
+[28-Jul-2022 20:29:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 28 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(28): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
+[28-Jul-2022 21:51:54 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 28
+[28-Jul-2022 21:51:54 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 28 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(28): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
+[28-Jul-2022 22:29:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:342
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 342
+[28-Jul-2022 22:34:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:343
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 343
+[28-Jul-2022 22:36:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:343
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 343
+[28-Jul-2022 22:37:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:338
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 338
+[28-Jul-2022 22:39:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:338
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 338
+[28-Jul-2022 22:42:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:343
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 343
+[28-Jul-2022 22:43:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getTotalPrice() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:338
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 338
+[28-Jul-2022 22:43:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:342
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 342
+[28-Jul-2022 22:45:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class OrderItem could not be converted to string in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:337
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 337
+[28-Jul-2022 22:45:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:342
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 342
+[28-Jul-2022 22:45:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getTotalPrice() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:337
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 337
+[28-Jul-2022 22:45:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class OrderItem could not be converted to string in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:337
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 337
+[28-Jul-2022 22:45:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class OrderItem could not be converted to string in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:337
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 337
+[28-Jul-2022 22:45:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:342
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 342
+[28-Jul-2022 22:51:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:342
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 342
+[28-Jul-2022 22:53:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:342
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 342
+[28-Jul-2022 22:55:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:342
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(32): Page::showOrderHistory(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 342

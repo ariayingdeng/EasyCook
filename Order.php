@@ -60,15 +60,17 @@ if (isset($_POST['checkout'])){
     Page::showOrderDetails($ingredentArray,$total);
 } else if (isset($_POST['confirm'])){
 
-    //insert data orders table
+    //insert data into orders table
     $currentUser = UserDAO::getUser($_SESSION['loggedemail']);
     $newOrder = new Order();
     $newOrder->setTotalPrice($_POST['orderTotal']);
-    $newOrder->setImageURL($currentMeal->strMeal);
-    $newOrder->setMealName($currentMeal->strMealThumb);
+    $newOrder->setImageURL($currentMeal->strMealThumb);
+    $newOrder->setMealName($currentMeal->strMeal);
     $newOrder->setMealInstructions($currentMeal->strInstructions);
     $newOrder->setUserID($currentUser->getId());
+    $newOrder->setDate(date("Y/m/d")."");
     $lastOrderID = OrderDAO::createOrder($newOrder);
+
 
     //Find each ingredient's amount and insert data into Orderitem table
     foreach($ingredentArray as $ingredient=>$amount){
