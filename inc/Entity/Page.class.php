@@ -353,14 +353,15 @@ class Page
                              <div class="container">
                                 <div class="row" >
                                     <div class="col-5" style="padding-top: 0.4rem;">
-                                    <?= $perOrder->getDate()?> &nbsp;&nbsp;
-                                    <?=$perOrder->getTime()?>
+                                    <?= $perOrder->getDate()?> 
+                                    
                                     </div>
                                     <div class="col-5" style="padding-top:  0.4rem;">
                                     Total price: $<?= $perOrder->getTotalPrice()?>
                                     </div>
                                     <div class="col-auto">
-                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <!-- <button type="button" class="btn btn-outline-success">Edit</button> -->
+                                    <?=$perOrder->getTime()?>
                                     </div>
                                 </div>
                             </div>
