@@ -588,3 +588,30 @@ Stack trace:
 #3 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 45
 [28-Jul-2022 22:55:40 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:12) in E:\CSIS\Summer2022\3280\3280-project\Order.php on line 86
+[29-Jul-2022 03:12:35 Europe/Berlin] PHP Warning:  Undefined variable $loggedUser in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:76
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Home.php(44): Page::showHeader()
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:37 Europe/Berlin] PHP Warning:  Undefined variable $loggedUser in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:76
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Home.php(44): Page::showHeader()
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:41 Europe/Berlin] PHP Warning:  Undefined variable $loggedUser in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:76
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Home.php(44): Page::showHeader()
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 20:49:25 Europe/Berlin] Please enter your password with at least 8 characters.
+[29-Jul-2022 20:49:25 Europe/Berlin] Email has been taken.
+[29-Jul-2022 21:13:54 Europe/Berlin] Editting user account failed.
+[29-Jul-2022 21:13:54 Europe/Berlin] PHP Warning:  Undefined array key "email" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 27
+[29-Jul-2022 21:16:02 Europe/Berlin] PHP Warning:  Undefined array key "action" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[29-Jul-2022 21:17:58 Europe/Berlin] Editting user account failed.
+[29-Jul-2022 21:21:53 Europe/Berlin] Editting user account failed.
+[29-Jul-2022 21:24:37 Europe/Berlin] Editting user account failed.
+[29-Jul-2022 21:31:38 Europe/Berlin] Editting user account failed.

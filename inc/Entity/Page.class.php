@@ -40,10 +40,66 @@ class Page
                                 <a class="nav-link" href="" tabindex="-1" aria-disabled="true">Orders</a>
                             </li>
                         </ul>
-                        <form class="d-flex">
+                        <form method="post" action="<?= $_SERVER['PHP_SELF']; ?>" class="d-flex">
                             <?php
                             if (isset($_SESSION['loggedemail'])) {
-                                echo "<a class='btn btn-outline-light font-monospace' href='Logout.php'>Logout</a>";
+                                $loggedUser = UserDAO::getUser($_SESSION['loggedemail']);
+                                echo "<a class='btn btn-outline-light font-monospace' href='Logout.php'>Logout</a>&nbsp;&nbsp;";
+                            ?>
+                                <!-- Modified from modal example from Bootstrap: https://getbootstrap.com/docs/5.0/components/modal/ -->
+                                <!-- Edit User Account -->
+                                <button type="button" class="btn btn-outline-light rounded-circle" data-bs-toggle="modal" data-bs-target="#editUser">
+                                    <i class='fa-solid fa-gear'></i>
+                                </button>
+
+                                <div class="modal fade" id="editUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Settings</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <!-- <form method="post" action=""> -->
+                                            <div class="modal-body">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Email Address</span>
+                                                    <input type="email" class="form-control" id="e-email" name="email" placeholder="Edit your email address" value="<?= $loggedUser->getEmail(); ?>" disabled>
+                                                    <input type="hidden" name="email" value="<?= $loggedUser->getEmail(); ?>">
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Username</span>
+                                                    <input type="text" class="form-control" id="e-username" name="username" placeholder="Edit your username" value="<?= $loggedUser->getUsername(); ?>" required>
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Contact Number</span>
+                                                    <input type="text" class="form-control" id="e-phonenumber" name="phonenumber" placeholder="Edit your contact number" value="<?= $loggedUser->getPhoneNumber(); ?>" required>
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Address</span>
+                                                    <input type="text" class="form-control" id="e-address" name="address" placeholder="Edit your address" value="<?= $loggedUser->getAddress(); ?>" required>
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Password</span>
+                                                    <input type="password" class="form-control" id="e-password" name="password" placeholder="Enter your password" required>
+                                                </div>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Password Confirm</span>
+                                                    <input type="password" class="form-control" id="e-password2" name="password2" placeholder="Confirm your password" required>
+                                                </div>
+                                                <span id="passwordInline" class="form-text">
+                                                    Must be at least 8 characters long.
+                                                </span>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                <input type="submit" name="submit" class="btn btn-success" value="Save">
+                                            </div>
+                                            <!-- </form> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php
                             } else {
                                 echo "<a class='btn btn-outline-light font-monospace' href='Register.php'>Register</a>&nbsp;&nbsp;&nbsp;&nbsp;";
                                 echo "<a class='btn btn-outline-light font-monospace' href='Login.php'>Login</a>";
@@ -54,12 +110,21 @@ class Page
                     </div>
                 </div>
             </nav>
+            <?php
+            if (!is_null(self::$notifications)) {
+                echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
+                foreach (self::$notifications as $msg) {
+                    echo "<li>" . $msg . "</li>";
+                }
+                echo "</ul></div>";
+            }
+        }
 
-        <?php }
 
-
-    static function showFooter()
-    { ?>
+        static function showFooter()
+        { ?>
+            <!-- JavaScript Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         </body>
 
         </html>
@@ -67,8 +132,8 @@ class Page
     <?php }
 
 
-    static function showLogin()
-    { ?>
+        static function showLogin()
+        { ?>
         <div class="pt-3" style="background-color: #FFFACD;">
             <?php
             if (!is_null(self::$notifications)) {
@@ -99,8 +164,8 @@ class Page
     <?php }
 
 
-    static function showRegistration()
-    { ?>
+        static function showRegistration()
+        { ?>
         <div class="pt-3" style="background-color: #FFFACD;">
             <?php
             if (!is_null(self::$notifications)) {
@@ -151,18 +216,20 @@ class Page
         </div>
     <?php }
 
-    static function showLogout($user)
-    {
+
+        static function showLogout($user)
+        {
     ?>
         <div class="alert alert-warning text-center m-0" role="alert">
             <h2>Thank you for your visit, <?php echo $user->getUsername(); ?>!</h2>
         </div>
         <img src="<?php echo IMAGES . "/logout.jpg" ?>" class="img-fluid rounded mx-auto d-block" alt="logout">
     <?php
-    }
+        }
 
-    static function showHome($recipes)
-    {
+
+        static function showHome($recipes)
+        {
     ?>
         <div class="d-flex justify-content-between align-content-start flex-wrap" style="background-color: #FFFACD;">
             <?php
@@ -173,10 +240,10 @@ class Page
         </div>
 
     <?php
-    }
+        }
 
-    static function showRecipeCard($recipe)
-    {
+        static function showRecipeCard($recipe)
+        {
     ?>
         <div class="card mt-3 mb-3" style="width: 18rem;" style="background-color: #fffce6;">
             <img src="<?= $recipe->getImageURL(); ?>" class="card-img-top" alt="MealPic">
@@ -190,14 +257,15 @@ class Page
                     }
                     ?>
                 </p>
-                <a href='Order.php?mealName=<?=$recipe->getMealName()?>' class="btn btn-success font-monospace"><i class="fa-solid fa-cart-plus"></i> Order</a>
+                <a href='Order.php?mealName=<?= $recipe->getMealName() ?>' class="btn btn-success font-monospace"><i class="fa-solid fa-cart-plus"></i> Order</a>
             </div>
         </div>
     <?php
-    }
+        }
 
-    static function showOrderRecipes($recipes)
-    {
+        // show the recipes that the user has ordered
+        static function showOrderRecipes($recipes)
+        {
     ?>
         <div style="background-color: #FFFACD;">
             <h5 class="d-flex justify-content-between p-3">The meals that you ordered:</h5>
@@ -208,10 +276,10 @@ class Page
             ?>
         </div>
     <?php
-    }
+        }
 
-    static function showOrderRecipeCard($recipe)
-    {
+        static function showOrderRecipeCard($recipe)
+        {
     ?>
         <div class="card mb-5 rounded" style="background-color: #fffce6;">
             <div class="row g-0">
@@ -223,89 +291,90 @@ class Page
                         <h5 class="card-title d-flex justify-content-between"><?= $recipe->getMealName(); ?><span class="badge bg-warning" style="height: 1.5rem;"><?= $recipe->getCategory(); ?></span></h5>
                         <p class="card-text"><?= $recipe->getMealInstructions(); ?></p>
                         <p class="card-text d-flex justify-content-between">
-                        <span>
-                            <?php
-                            $tags = explode(",", $recipe->getTagStr());
-                            foreach ($tags as $tag) {
-                                echo "<span class='badge bg-secondary' style='margin-right:10px'>" . $tag . "</span>";
-                            }
-                            ?>
-                        </span>
-                        <a href="<?= $recipe->getYoutubeLink(); ?>" type="button" class="btn btn-info" target="_blank">Check YouTube Video</a>
+                            <span>
+                                <?php
+                                $tags = explode(",", $recipe->getTagStr());
+                                foreach ($tags as $tag) {
+                                    echo "<span class='badge bg-secondary' style='margin-right:10px'>" . $tag . "</span>";
+                                }
+                                ?>
+                            </span>
+                            <a href="<?= $recipe->getYoutubeLink(); ?>" type="button" class="btn btn-info" target="_blank">Check YouTube Video</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-<?php
-    }
+    <?php
+        }
 
 
-    //Order Page; 
-    static function showOrder($recipe,$ingredents)
-    {
-       
+        //Order Page; 
+        static function showOrder($recipe, $ingredents)
+        {
+
     ?>
-      <div class="pt-3" style="background-color: #FFFACD;">
-         <div class="card w-50 align-items-center mx-auto py-2" style="background-color: #fffce6;">
+        <div class="pt-3" style="background-color: #FFFACD;">
+            <div class="card w-50 align-items-center mx-auto py-2" style="background-color: #fffce6;">
                 <form action="" method="post">
                     <div class="card-body">
                         <h2 class="card-title mb-3">These are our recommended ingredients:</h2>
-                        <h5 class="card-title mb-3">Customise your ingredient for  <?=$recipe->strMeal?></h2>
+                        <h5 class="card-title mb-3">Customise your ingredient for <?= $recipe->strMeal ?></h2>
 
-                        <?php 
-                            foreach($ingredents as $ingredent=>$amount){
+                            <?php
+                            foreach ($ingredents as $ingredent => $amount) {
                                 echo '<div class="input-group mb-3">';
-                                echo '<span class="input-group-text">'. $ingredent .'</span>';
-                                echo '<input type="number" class="form-control" name='.str_replace(' ', '', $ingredent).' placeholder="1" value="1" required>';
+                                echo '<span class="input-group-text">' . $ingredent . '</span>';
+                                echo '<input type="number" class="form-control" name=' . str_replace(' ', '', $ingredent) . ' placeholder="1" value="1" required>';
                                 echo '</div>';
-                        }
-                        ?>
-                     
-                        <div class="d-flex justify-content-center">
-                            <input type="submit" name="checkout" class="btn btn-success" value="checkout">
-                    </div>
+                            }
+                            ?>
+
+                            <div class="d-flex justify-content-center">
+                                <input type="submit" name="checkout" class="btn btn-success" value="checkout">
+                            </div>
                 </form>
             </div>
         </div>
     <?php
-    }
+        }
 
-    static function showOrderDetails($ingredents,$total){
-        $stringOfIngredients="";
-        ?>
+        static function showOrderDetails($ingredents, $total)
+        {
+            $stringOfIngredients = "";
+    ?>
         <div class="pt-3" style="background-color: #FFFACD;">
             <div class="card w-50 align-items-center mx-auto py-2" style="background-color: #fffce6;">
                 <div class="card-body">
                     <h2 class="card-title mb-3">These are the ingredents you select:</h2>
                     <form action="" method="post">
-                    <table class="table">                 
-                        <thead>
-                            <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Ingredient</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <?php
-                            $i =1; 
-                            foreach($ingredents as $ingredent=>$price){
-                                echo "<tr>";
-                                echo ' <th scope="row">'.$i.'</th>';
-                                echo "<td>$ingredent</td>";
-                                echo "<td>".$_POST[str_replace(' ', '', $ingredent)]."</td>";
-                                echo "<td>$price</td>";
-                                echo "</tr>";
-                                $i++;
-                                echo ' <input type="hidden" name='.str_replace(' ', '', $ingredent).' value='.$_POST[str_replace(' ', '', $ingredent)].'>';
-                            }
-                        ?>
-                        </tbody>
-                    </table>
-                    Total Price: <?=$total?>
-                        <input type="hidden" name="orderTotal" value=<?=$total?>>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Ingredient</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $i = 1;
+                                foreach ($ingredents as $ingredent => $price) {
+                                    echo "<tr>";
+                                    echo ' <th scope="row">' . $i . '</th>';
+                                    echo "<td>$ingredent</td>";
+                                    echo "<td>" . $_POST[str_replace(' ', '', $ingredent)] . "</td>";
+                                    echo "<td>$price</td>";
+                                    echo "</tr>";
+                                    $i++;
+                                    echo ' <input type="hidden" name=' . str_replace(' ', '', $ingredent) . ' value=' . $_POST[str_replace(' ', '', $ingredent)] . '>';
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                        Total Price: <?= $total ?>
+                        <input type="hidden" name="orderTotal" value=<?= $total ?>>
                         <div class="d-flex justify-content-center">
                             <input type="submit" name="confirm" class="btn btn-success" value="confirm">
                         </div>
@@ -313,8 +382,8 @@ class Page
                 </div>
             </div>
         </div>
-      <?php
+<?php
+        }
     }
-}
 
 ?>

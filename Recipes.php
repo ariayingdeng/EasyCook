@@ -22,12 +22,14 @@ RecipeDAO::init();
 session_start();
 
 if (LoginManager::verifyLogin()) {
+    // Check and save edit post
+    LoginManager::saveEditAccount();
+
     $user = UserDAO::getUser($_SESSION['loggedemail']);
 
     Page::showHeader();
     $recipes = RecipeDAO::getAllRecipes();
     Page::showOrderRecipes($recipes);
-
 } else {
     header('Location: Login.php');
 }
