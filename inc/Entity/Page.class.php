@@ -18,6 +18,12 @@ class Page
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <link rel="stylesheet" href="css/styles.css">
             <script src="https://kit.fontawesome.com/2c624dc77d.js" crossorigin="anonymous"></script>
+
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
         </head>
 
         <body>
@@ -37,7 +43,7 @@ class Page
                                 <a class="nav-link" href="Recipes.php">Recipes</a>
                             </li>
                             <li class="nav-item fw-bold">
-                                <a class="nav-link" href="" tabindex="-1" aria-disabled="true">Orders</a>
+                                <a class="nav-link" href="OrderHistory.php" tabindex="-1" aria-disabled="true">Orders</a>
                             </li>
                         </ul>
                         <form method="post" action="<?= $_SERVER['PHP_SELF']; ?>" class="d-flex">
@@ -384,6 +390,66 @@ class Page
                             <input type="submit" name="confirm" class="btn btn-success" value="confirm">
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    <?php
+            }
+
+
+
+            static function showOrderHistory($allOrders)
+            {
+    ?>
+
+        <div class="pt-3" style="background-color: #FFFACD;">
+            <h2>Order History</h2>
+            <div class="card w-50 mx-auto " style="background-color: #fffce6;">
+                <div id="accordion">
+
+                    <?php
+                    $i = 0;
+                    $extendStatus = "true";
+                    foreach ($allOrders as $perOrder) {
+                        if ($i != 0) {
+                            $extendStatus = "false";
+                        }
+                        echo "<div class='card'>";
+                        echo "<div class='card-header' id='heading" . $perOrder->getID() . "'>";
+                        echo " <h2 class='mb-0'>";
+                        echo " <button class='btn btn-link' data-toggle='collapse' data-target='#collapse" . $perOrder->getID() . "' aria-expanded='" . $extendStatus . "' aria-controls='collapse" . $perOrder->getID() . "'>";
+                        echo $perOrder->getMealName();
+                        echo "</button>";
+                        echo "</h2>";
+                        echo "</div>";
+                        echo "<div id='collapse" . $perOrder->getID() . "' class='collapse' aria-labelledby='heading" . $perOrder->getID() . "' data-parent='#accordion'>";
+                        echo " <div class='card-body'>";
+                    ?>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-5" style="padding-top: 0.4rem;">
+                                    <?= $perOrder->getDate() ?>
+
+                                </div>
+                                <div class="col-5" style="padding-top:  0.4rem;">
+                                    Total price: $<?= $perOrder->getTotalPrice() ?>
+                                </div>
+                                <div class="col-auto">
+                                    <!-- <button type="button" class="btn btn-outline-success">Edit</button> -->
+                                    <?= $perOrder->getTime() ?>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                        $i++;
+                    }
+
+
+                    ?>
                 </div>
             </div>
         </div>

@@ -27,6 +27,8 @@ create table orders (
 	imageURL VARCHAR(500),
 	mealName VARCHAR(50),
 	mealInstructions VARCHAR(2000),
+    date VARCHAR(20),
+    currentTime  VARCHAR(20),
 	userID INT
 ) Engine=InnoDB;
 
@@ -50,7 +52,9 @@ INSERT INTO user VALUES (1,"Aria@gmail.com","Aria","$2y$10$Wc2ccfQcNXgU7yStROapE
 
 INSERT INTO user VALUES (2, 'aria@qq.com', 'Aria', '$2y$10$isKVCgfPBnl/oF/6reugj.MwGQkh6dwyaqIDpea5QZsMTBMeC5QjW', '1234567890', '88, New Westminster, BC');
 
-INSERT INTO orders VALUES (1,200,"https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg","BeaverTails","delicious dog",1);
+INSERT INTO user VALUES (3, 'Jack@gmail.com', 'Jack', '$2y$10$XHavKaz91f4RWsdOXIITEehwt53PgFVSulzvN1ie7RPBzxA9.FzSm', '1234567890', '33, New Westminster, BC');
+
+-- INSERT INTO orders VALUES (1,200,"https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg","BeaverTails","delicious dog",1);
 
 INSERT INTO inventoryItem VALUES
   (1, 'Potatoes', 6000, 0.99, "1 medium"),
