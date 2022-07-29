@@ -353,14 +353,15 @@ class Page
                              <div class="container">
                                 <div class="row" >
                                     <div class="col-5" style="padding-top: 0.4rem;">
-                                    <?= $perOrder->getDate()?> 
-                                    
+                                    <!-- <?= $perOrder->getDate()?>  -->
+                                    <img src=<?=$perOrder->getImageURL()?>  width="50rem" height="50rem" alt="picture1">
                                     </div>
-                                    <div class="col-5" style="padding-top:  0.4rem;">
+                                    <div class="col-4" style="padding-top:  0.4rem;">
                                     Total price: $<?= $perOrder->getTotalPrice()?>
                                     </div>
-                                    <div class="col-auto">
+                                    <div class="col-auto"  style="padding-top:  0.4rem;">
                                     <!-- <button type="button" class="btn btn-outline-success">Edit</button> -->
+                                    <?= $perOrder->getDate()?> 
                                     <?=$perOrder->getTime()?>
                                     </div>
                                 </div>
