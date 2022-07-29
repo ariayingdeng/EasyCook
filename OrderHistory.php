@@ -28,8 +28,9 @@ UserDAO::init();
 $currentUser = UserDAO::getUser($_SESSION['loggedemail']);
 $orderListFromThisUser = OrderDAO::getOrderByUserID($currentUser->getId());
 
+
 Page::showHeader();
-Page::showOrderHistory($orderListFromThisUser);
+Page::showOrderHistory(array_reverse($orderListFromThisUser));
 Page::showFooter();
 
 ?>

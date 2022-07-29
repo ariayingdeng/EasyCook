@@ -9,6 +9,7 @@ class Order{
     private $mealInstructions; 
     private $userID;
     private $date;
+    private $currentTime; 
 
     function setID($id){
         $this->id = $id;
@@ -31,6 +32,9 @@ class Order{
     function setDate($date){
         $this->date= $date;
     }
+    function setTime($time){
+        $this->currentTime = $time;
+    }
 
     function getID(){
         return $this->id;
@@ -52,6 +56,9 @@ class Order{
     }
     function getDate(){
         return $this->date;
+    }
+    function getTime(){
+        return $this->currentTime;
     }
 
 }
