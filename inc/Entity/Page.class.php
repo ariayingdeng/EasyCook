@@ -59,7 +59,7 @@ class Page
                                                 <h5 class="modal-title" id="staticBackdropLabel">Settings</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <!-- <form method="post" action=""> -->
+
                                             <div class="modal-body">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Email Address</span>
@@ -95,7 +95,7 @@ class Page
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                                                 <input type="submit" name="submit" class="btn btn-success" value="Save">
                                             </div>
-                                            <!-- </form> -->
+
                                         </div>
                                     </div>
                                 </div>
@@ -110,21 +110,24 @@ class Page
                     </div>
                 </div>
             </nav>
-            <?php
-            if (!is_null(self::$notifications)) {
-                echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
-                foreach (self::$notifications as $msg) {
-                    echo "<li>" . $msg . "</li>";
+
+            <div class="pt-3" style="background-color: #FFFACD;">
+                <!-- ends at the showHome and showOrderRecipes -->
+                <?php
+                if (!is_null(self::$notifications)) {
+                    echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
+                    foreach (self::$notifications as $msg) {
+                        echo "<li>" . $msg . "</li>";
+                    }
+                    echo "</ul></div>";
                 }
-                echo "</ul></div>";
             }
-        }
 
 
-        static function showFooter()
-        { ?>
-            <!-- JavaScript Bundle with Popper -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+            static function showFooter()
+            { ?>
+                <!-- JavaScript Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         </body>
 
         </html>
@@ -132,15 +135,15 @@ class Page
     <?php }
 
 
-        static function showLogin()
-        { ?>
+            static function showLogin()
+            { ?>
         <div class="pt-3" style="background-color: #FFFACD;">
             <?php
-            if (!is_null(self::$notifications)) {
-                echo "<div class='alert alert-danger mx-auto text-center' role='alert' style='width: 45rem;'>";
-                echo self::$notifications;
-                echo "</div>";
-            }
+                if (!is_null(self::$notifications)) {
+                    echo "<div class='alert alert-danger mx-auto text-center' role='alert' style='width: 45rem;'>";
+                    echo self::$notifications;
+                    echo "</div>";
+                }
             ?>
             <div class="card align-items-center mx-auto py-2" style="background-color: #fffce6; width: 45rem;">
                 <form action="" method="post">
@@ -164,17 +167,17 @@ class Page
     <?php }
 
 
-        static function showRegistration()
-        { ?>
+            static function showRegistration()
+            { ?>
         <div class="pt-3" style="background-color: #FFFACD;">
             <?php
-            if (!is_null(self::$notifications)) {
-                echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
-                foreach (self::$notifications as $msg) {
-                    echo "<li>" . $msg . "</li>";
+                if (!is_null(self::$notifications)) {
+                    echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
+                    foreach (self::$notifications as $msg) {
+                        echo "<li>" . $msg . "</li>";
+                    }
+                    echo "</ul></div>";
                 }
-                echo "</ul></div>";
-            }
             ?>
             <div class="card align-items-center mx-auto py-2" style="background-color: #fffce6; width: 45rem;">
                 <form action="" method="post">
@@ -217,33 +220,34 @@ class Page
     <?php }
 
 
-        static function showLogout($user)
-        {
+            static function showLogout($user)
+            {
     ?>
         <div class="alert alert-warning text-center m-0" role="alert">
             <h2>Thank you for your visit, <?php echo $user->getUsername(); ?>!</h2>
         </div>
         <img src="<?php echo IMAGES . "/logout.jpg" ?>" class="img-fluid rounded mx-auto d-block" alt="logout">
     <?php
-        }
+            }
 
 
-        static function showHome($recipes)
-        {
+            static function showHome($recipes)
+            {
     ?>
         <div class="d-flex justify-content-between align-content-start flex-wrap" style="background-color: #FFFACD;">
             <?php
-            foreach ($recipes as $recipe) {
-                self::showRecipeCard($recipe);
-            }
+                foreach ($recipes as $recipe) {
+                    self::showRecipeCard($recipe);
+                }
             ?>
+        </div>
         </div>
 
     <?php
-        }
+            }
 
-        static function showRecipeCard($recipe)
-        {
+            static function showRecipeCard($recipe)
+            {
     ?>
         <div class="card mt-3 mb-3" style="width: 18rem;" style="background-color: #fffce6;">
             <img src="<?= $recipe->getImageURL(); ?>" class="card-img-top" alt="MealPic">
@@ -261,25 +265,26 @@ class Page
             </div>
         </div>
     <?php
-        }
+            }
 
-        // show the recipes that the user has ordered
-        static function showOrderRecipes($recipes)
-        {
+            // show the recipes that the user has ordered
+            static function showOrderRecipes($recipes)
+            {
     ?>
         <div style="background-color: #FFFACD;">
             <h5 class="d-flex justify-content-between p-3">The meals that you ordered:</h5>
             <?php
-            foreach ($recipes as $recipe) {
-                self::showOrderRecipeCard($recipe);
-            }
+                foreach ($recipes as $recipe) {
+                    self::showOrderRecipeCard($recipe);
+                }
             ?>
         </div>
+        </div>
     <?php
-        }
+            }
 
-        static function showOrderRecipeCard($recipe)
-        {
+            static function showOrderRecipeCard($recipe)
+            {
     ?>
         <div class="card mb-5 rounded" style="background-color: #fffce6;">
             <div class="row g-0">
@@ -306,12 +311,12 @@ class Page
             </div>
         </div>
     <?php
-        }
+            }
 
 
-        //Order Page; 
-        static function showOrder($recipe, $ingredents)
-        {
+            //Order Page; 
+            static function showOrder($recipe, $ingredents)
+            {
 
     ?>
         <div class="pt-3" style="background-color: #FFFACD;">
@@ -337,11 +342,11 @@ class Page
             </div>
         </div>
     <?php
-        }
+            }
 
-        static function showOrderDetails($ingredents, $total)
-        {
-            $stringOfIngredients = "";
+            static function showOrderDetails($ingredents, $total)
+            {
+                $stringOfIngredients = "";
     ?>
         <div class="pt-3" style="background-color: #FFFACD;">
             <div class="card w-50 align-items-center mx-auto py-2" style="background-color: #fffce6;">
@@ -383,7 +388,7 @@ class Page
             </div>
         </div>
 <?php
+            }
         }
-    }
 
 ?>

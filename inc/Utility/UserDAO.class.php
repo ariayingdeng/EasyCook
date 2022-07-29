@@ -57,4 +57,6 @@ class UserDAO
         return self::$db->rowCount();
     }
 
+    
+
 }

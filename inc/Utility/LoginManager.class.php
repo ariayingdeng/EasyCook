@@ -31,6 +31,7 @@ class LoginManager
                 $updatedUser->setPassword($_POST["password"]);
 
                 UserDAO::updateUser($updatedUser);
+                Page::$notifications = array("Profile updated successfully!");
             } else {
                 Page::$notifications = Validate::$messages;
             }

@@ -615,3 +615,16 @@ Stack trace:
 [29-Jul-2022 21:21:53 Europe/Berlin] Editting user account failed.
 [29-Jul-2022 21:24:37 Europe/Berlin] Editting user account failed.
 [29-Jul-2022 21:31:38 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:20:29 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:21:03 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:21:59 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:23:58 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:25:36 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:26:04 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:28:57 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:28:57 Europe/Berlin] PHP Warning:  Array to string conversion in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 231
+[30-Jul-2022 00:31:54 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:32:05 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:34:43 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:35:01 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:37:07 Europe/Berlin] Editting user account failed.

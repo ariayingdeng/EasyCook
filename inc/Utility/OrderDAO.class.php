@@ -34,7 +34,7 @@ class OrderDAO
         return self::$db->getSetResult();
     }
 
-
+    
     static function createOrderItem(OrderItem $orderItem)
     {
         $sql = "INSERT INTO orderitem (orderID, inventoryID, amount) VALUES (:orderID, :inventoryID, :amount)";
