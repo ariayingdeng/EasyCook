@@ -350,19 +350,39 @@ class Page
                             echo "<div id='collapse".$perOrder->getID()."' class='collapse' aria-labelledby='heading".$perOrder->getID()."' data-parent='#accordion'>";
                             echo " <div class='card-body'>";
                             ?>
-                             <div class="container">
+                             <div class="container-fluid">
                                 <div class="row" >
-                                    <div class="col-5" style="padding-top: 0.4rem;">
-                                    <!-- <?= $perOrder->getDate()?>  -->
-                                    <img src=<?=$perOrder->getImageURL()?>  width="50rem" height="50rem" alt="picture1">
+                                    <div class="col">
+                                            <img src=<?=$perOrder->getImageURL()?>  width="50rem" height="50rem" alt="picture1">
                                     </div>
-                                    <div class="col-4" style="padding-top:  0.4rem;">
-                                    Total price: $<?= $perOrder->getTotalPrice()?>
+                                    <div class="col-3" style="padding-top:  0.7rem;">
+                                        Ordered on: <?= $perOrder->getDate()?><?= $perOrder->getTime()?>
                                     </div>
-                                    <div class="col-auto"  style="padding-top:  0.4rem;">
-                                    <!-- <button type="button" class="btn btn-outline-success">Edit</button> -->
-                                    <?= $perOrder->getDate()?> 
-                                    <?=$perOrder->getTime()?>
+                                    <div class="col-3" style="padding-top:  0.7rem;">
+                                        Total price: $<?= $perOrder->getTotalPrice()?>
+                                    </div>
+                                    <div class="col"  style="padding-top:  0.5rem;">
+                                        <!-- <button type="button" class="btn btn-outline-success">Edit</button> -->
+                                        <!-- <?= $perOrder->getDate()?> 
+                                        <?=$perOrder->getTime()?> -->
+                                        <?php 
+                                            date_default_timezone_set("America/Los_Angeles");
+                                            $orderDateTime =  date('d-m-Y h:i:s', strtotime($perOrder->getDate().$perOrder->getTime()));
+                                            $currentDate = date('d-m-Y h:i:s');
+                                            $orderDateTimeObj = new DateTime($orderDateTime);
+                                            $currentDateObj = new DateTime($currentDate);
+                                            $interval =  $orderDateTimeObj->diff($currentDateObj);
+                                            // echo ($interval->i); // get minute
+                                            if ($interval->i<=60){
+                                                ?>
+                                                <form action="" method="post">
+                                                <a href='OrderEdit.php?mealName=<?=$perOrder->getMealName()?>&mealID=<?=$perOrder->getID()?>'  class="btn btn-success font-monospace"> Edit</a>
+                                                    <button type="submit" class="btn btn-danger" name="delete">Delete</button>
+                                                    <input type="hidden" name="deleteID" value=<?=$perOrder->getID()?>></button>
+                                                </form>
+                                                <?php
+                                            }
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -373,9 +393,7 @@ class Page
                             echo "</div>";
                             $i++;
                             
-                        }
-
-                        
+                        }  
        ?>
                 </div>
             </div>
