@@ -844,3 +844,15 @@ Stack trace:
 [29-Jul-2022 17:20:43 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\CSIS\Summer2022\3280\3280-project\OrderEdit.php:85) in E:\CSIS\Summer2022\3280\3280-project\OrderEdit.php on line 86
 [30-Jul-2022 02:24:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 361
 [30-Jul-2022 02:29:30 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 04:00:43 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[30-Jul-2022 04:00:43 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 34
+[30-Jul-2022 04:10:12 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 244
+[30-Jul-2022 04:10:16 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 244
+[30-Jul-2022 04:10:20 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 244
+[30-Jul-2022 04:11:24 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[30-Jul-2022 04:11:24 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 34
+[30-Jul-2022 04:11:58 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 04:12:09 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[30-Jul-2022 04:12:09 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 34
+[30-Jul-2022 04:16:02 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[30-Jul-2022 04:28:33 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 243

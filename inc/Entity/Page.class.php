@@ -240,6 +240,12 @@ class Page
             static function showHome($recipes)
             {
     ?>
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF'] . "?search" ?>">
+            <div class="input-group mx-auto my-2" style="width: 40rem; height: 3rem;">
+                <input type="text" class="form-control" id="meal" name="meal" placeholder="Search for meals..." value="" required>
+                <input class="btn btn-info" type="submit" name="search" value="SEARCH" />
+            </div>
+        </form>
         <div class="d-flex justify-content-between align-content-start flex-wrap" style="background-color: #FFFACD;">
             <?php
                 foreach ($recipes as $recipe) {

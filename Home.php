@@ -29,8 +29,17 @@ if (LoginManager::verifyLogin()) {
 }
 
 Page::showHeader();
-$recipes = RecipeDAO::getAllRecipes();
-Page::showHome($recipes);
+
+// if the user search for specific meals 
+if (isset($_POST['search'])) {
+    // show results
+    $recipes = RecipeDAO::searchMeals($_POST['meal']);
+    Page::showHome($recipes);
+} else {
+    // show all meals
+    $recipes = RecipeDAO::getAllRecipes();
+    Page::showHome($recipes);
+}
 
 Page::showFooter();
 

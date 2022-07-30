@@ -51,6 +51,16 @@ class RecipeDAO
         return self::$db->getSetResult();
     }
 
+    // to get meals with searchText
+    static function searchMeals($searchText)
+    {
+        $sql = "SELECT * FROM recipes where mealName like :searchText";
+        self::$db->query($sql);
+        self::$db->bind(":searchText", "%" . $searchText . "%");
+        self::$db->execute();
+        return self::$db->getSetResult();
+    }
+
     // to get all the recipes that the user ordered
     static function getRecipesByUserID($userID)
     {

@@ -20,18 +20,14 @@ require_once("inc/Utility/Validate.class.php");
 UserDAO::init();
 RecipeDAO::init();
 
-
-//Start the session
-session_start();
-
 if (LoginManager::verifyLogin()) {
     // Check and save edit post
     LoginManager::saveEditAccount();
 
     $user = UserDAO::getUser($_SESSION['loggedemail']);
+    $recipes = RecipeDAO::getRecipesByUserID($user->getId());
 
     Page::showHeader();
-    $recipes = RecipeDAO::getRecipesByUserID($user->getId());
     Page::showOrderRecipes($recipes);
 } else {
     header('Location: Login.php');
