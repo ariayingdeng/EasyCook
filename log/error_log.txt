@@ -837,6 +837,22 @@ Stack trace:
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 298
 [30-Jul-2022 02:18:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getImageURL() on bool in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:298
 Stack trace:
+#0 C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php(71): PDOStatement->execute()
+#1 C:\xampp\htdocs\3280Project\inc\Utility\OrderDAO.class.php(70): PDOAgent->execute()
+#2 C:\xampp\htdocs\3280Project\OrderEdit.php(69): OrderDAO::editOrders('Canadian Butter...', '43')
+#3 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 71
+[30-Jul-2022 01:22:12 Europe/Berlin] PHP Warning:  Undefined array key "delete" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 32
+[30-Jul-2022 01:34:16 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 30
+[30-Jul-2022 01:34:44 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 30
+[30-Jul-2022 01:35:22 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 30
+[30-Jul-2022 02:02:32 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 474
+[30-Jul-2022 02:45:28 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35
+[30-Jul-2022 02:45:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(35): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
 #0 E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php(284): Page::showOrderRecipeCard(false)
 #1 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(35): Page::showOrderRecipes(Array)
 #2 {main}
@@ -864,3 +880,10 @@ Stack trace:
 #1 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php on line 34
 [30-Jul-2022 04:55:23 Europe/Berlin] Regisration failed.
+[30-Jul-2022 05:16:24 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35
+[30-Jul-2022 05:16:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(35): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
+>>>>>>> a1e84a52b2a2a203e803f793fcae0ba32512a630
