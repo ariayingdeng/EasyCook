@@ -55,7 +55,16 @@ class RecipeDAO
     static function getRecipesByUserID($userID)
     {
         $recipes = [];
-        
+
+        OrderDAO::init();
+        $orders = OrderDAO::getOrderByUserID($userID);
+        foreach ($orders as $order) {
+            $mealName = $order->getMealName();
+            $recipe = self::getRecipe($mealName);
+            if (!array_key_exists($mealName, $recipes)) {
+                $recipes[$mealName] = $recipe;
+            }
+        }
         
         return $recipes;
     }

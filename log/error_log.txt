@@ -774,3 +774,64 @@ Stack trace:
 #2 C:\xampp\htdocs\3280Project\Order.php(69): OrderDAO::createOrder(Object(Order))
 #3 {main}
   thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 71
+[30-Jul-2022 01:50:39 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\CSIS\Summer2022\3280\3280-project\Recipes.php on line 22
+[30-Jul-2022 01:50:39 Europe/Berlin] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 10
+[30-Jul-2022 01:50:39 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 16
+[30-Jul-2022 01:50:39 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php:39) in E:\CSIS\Summer2022\3280\3280-project\Recipes.php on line 34
+[30-Jul-2022 01:51:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php:45
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php(67): PDOAgent->query('SELECT * FROM r...')
+#1 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(10): RecipeDAO::getRowCount()
+#2 E:\CSIS\Summer2022\3280\3280-project\Home.php(22): RecipeService::saveRecipes()
+#3 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 45
+[30-Jul-2022 01:51:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php:45
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php(37): PDOAgent->query('SELECT * FROM u...')
+#1 E:\CSIS\Summer2022\3280\3280-project\Logout.php(17): UserDAO::getUser('aria@qq.com')
+#2 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 45
+[30-Jul-2022 01:58:08 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 28
+[30-Jul-2022 01:58:08 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 28 and defined in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php(28): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php on line 34
+[30-Jul-2022 02:06:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "OrderDAO" not found in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php:59
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(31): RecipeDAO::getRecipesByUserID(2)
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php on line 59
+[30-Jul-2022 02:07:40 Europe/Berlin] PHP Fatal error:  Class "Order" not found in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 88
+[30-Jul-2022 02:10:04 Europe/Berlin] PHP Fatal error:  Class "Order" not found in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 88
+[30-Jul-2022 02:10:08 Europe/Berlin] PHP Fatal error:  Class "Order" not found in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 88
+[30-Jul-2022 02:13:14 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, string given in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php:64
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(34): RecipeDAO::getRecipesByUserID(2)
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php on line 64
+[30-Jul-2022 02:14:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getImageURL() on bool in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:298
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php(284): Page::showOrderRecipeCard(false)
+#1 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(35): Page::showOrderRecipes(Array)
+#2 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 298
+[30-Jul-2022 02:14:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getImageURL() on bool in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:298
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php(284): Page::showOrderRecipeCard(false)
+#1 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(35): Page::showOrderRecipes(Array)
+#2 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 298
+[29-Jul-2022 17:14:27 America/Los_Angeles] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list' in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php:71
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php(71): PDOStatement->execute()
+#1 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\OrderDAO.class.php(27): PDOAgent->execute()
+#2 E:\CSIS\Summer2022\3280\3280-project\Order.php(70): OrderDAO::createOrder(Object(Order))
+#3 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 71
+[30-Jul-2022 02:14:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getImageURL() on bool in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:298
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php(284): Page::showOrderRecipeCard(false)
+#1 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(35): Page::showOrderRecipes(Array)
+#2 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 298
