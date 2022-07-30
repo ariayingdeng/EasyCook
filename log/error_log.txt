@@ -988,3 +988,9 @@ Stack trace:
 [30-Jul-2022 01:34:44 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 30
 [30-Jul-2022 01:35:22 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 30
 [30-Jul-2022 02:02:32 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 474
+[30-Jul-2022 02:45:28 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35
+[30-Jul-2022 02:45:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(35): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
