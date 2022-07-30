@@ -31,8 +31,7 @@ class Page
                 <div class="container-fluid">
                     <a class="navbar-brand" href="Home.php">
                         <!-- TODO: add icon for the project -->
-                        <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                        Easy Cook
+                         Easy Cook
                     </a>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -400,74 +399,99 @@ class Page
 
             static function showOrderHistory($allOrders)
             {
-                ?>
 
-                    <div class="pt-3" style="background-color: #FFFACD;">
-                        <h2>Order History</h2>
-                        <div class="card w-50 mx-auto " style="background-color: #fffce6;">
-                            <div id="accordion">
+    ?>
+        <div class="pt-3" style="background-color: #FFFACD;">
+            <h2>Order History</h2>
 
-                                <?php
-                                    $i = 0; 
-                                    $extendStatus="true";
-                                    foreach($allOrders as $perOrder){       
-                                        if ($i!=0){
-                                            $extendStatus = "false";
-                                        }
-                                        echo "<div class='card'>";
-                                            echo "<div class='card-header' id='heading".$perOrder->getID()."'>";
-                                                echo " <h2 class='mb-0'>";
-                                                echo " <button class='btn btn-link' data-toggle='collapse' data-target='#collapse".$perOrder->getID()."' aria-expanded='".$extendStatus."' aria-controls='collapse".$perOrder->getID()."'>";
-                                                echo $perOrder->getMealName();
-                                                echo "</button>";
-                                                echo "</h2>";
-                                            echo "</div>";
-                                            echo "<div id='collapse".$perOrder->getID()."' class='collapse' aria-labelledby='heading".$perOrder->getID()."' data-parent='#accordion'>";
-                                                echo " <div class='card-body'>";
-                                                ?>
-                                                    <div class="container-fluid">
-                                                        <div class="row" >
-                                                            <div class="col">
-                                                                    <img src=<?=$perOrder->getImageURL()?>  width="50rem" height="50rem" alt="picture1">
-                                                            </div>
-                                                            <div class="col-3" style="padding-top:  0.7rem;">
-                                                                Ordered on: <?= $perOrder->getDate()?><?= $perOrder->getTime()?>
-                                                            </div>
-                                                            <div class="col-3" style="padding-top:  0.7rem;">
-                                                                Total price: $<?= $perOrder->getTotalPrice()?>
-                                                            </div>
-                                                            <div class="col"  style="padding-top:  0.5rem;">
-                                                                <?php 
-                                                                    date_default_timezone_set("America/Los_Angeles");
-                                                                    $orderDateTime =  date('d-m-Y h:i:s', strtotime($perOrder->getDate().$perOrder->getTime()));
-                                                                    $currentDate = date('d-m-Y h:i:s');
-                                                                    $orderDateTimeObj = new DateTime($orderDateTime);
-                                                                    $currentDateObj = new DateTime($currentDate);
-                                                                    $interval =  $orderDateTimeObj->diff($currentDateObj);
-                                                                    // echo ($interval->i); // get minute
-                                                                    if ($interval->i<=60){
-                                                                        ?>
-                                                                        <form action="" method="post">
-                                                                        <a href='OrderEdit.php?mealName=<?=$perOrder->getMealName()?>&mealID=<?=$perOrder->getID()?>'  class="btn btn-success font-monospace"> Edit</a>
-                                                                            <button type="submit" class="btn btn-danger" name="delete">Delete</button>
-                                                                            <input type="hidden" name="deleteID" value=<?=$perOrder->getID()?>></button>
-                                                                        </form>
-                                                                        <?php
-                                                                    }
-                                                                ?>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                <?php
-                                            echo "</div>";
-                                        echo "</div>";
-                                    $i++;
-                                }                      
-                                ?>
-                            </div>
-                        </div>
-                    </div>
             <?php
+
+                if (count($allOrders) == 0) {
+            ?>
+
+                <div class="alert alert-warning text-center m-0" role="alert">
+                    <h2>No orders now, start your orders immediately!</h2>
+                </div>
+                <img src="<?php echo IMAGES . "/order.jpg" ?>" class="img-fluid rounded mx-auto d-block" alt="logout">
+
+            <?php
+                } else {
+                    $OrderNumber = 0;
+                    $OrderPriceTotal = 0;
+            ?>
+                <div class="card mx-auto " style="width: 60%; background-color: #fffce6;">
+                    <div id="accordion">
+                        <?php
+                        foreach ($allOrders as $perOrder) {
+                            echo "<div class='card'>";
+                            echo "<div class='card-header' id='heading" . $perOrder->getID() . "'>";
+                        ?>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h2 class='mb-0'>
+                                            <button class='btn btn-link' data-toggle='collapse' data-target='#collapse<?= $perOrder->getID() ?>' aria-controls='collapse<?= $perOrder->getID() ?>'>
+                                                <?= $perOrder->getMealName() ?>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div class="col-auto" style="padding-top:  0.8rem;">
+                                        <?= $perOrder->getDate() ?> <?= $perOrder->getTime() ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                            echo "</div>";
+                            echo "<div id='collapse" . $perOrder->getID() . "' class='collapse' aria-labelledby='heading" . $perOrder->getID() . "' data-parent='#accordion'>";
+                            echo " <div class='card-body'>";
+                            ?>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img src=<?= $perOrder->getImageURL() ?> width="50rem" height="50rem" alt="picture1">
+                                    </div>
+                                    <div class="col-4" style="padding-top:  0.7rem;">
+                                        Total price: $<?= $perOrder->getTotalPrice() ?>
+                                    </div>
+                                    <div class="col-auto" style="padding-top:  0.2rem;">
+                                        <?php
+                                        date_default_timezone_set("America/Los_Angeles");
+                                        $orderDateTime =  date('d-m-Y h:i:s', strtotime($perOrder->getDate() . $perOrder->getTime()));
+                                        $currentDate = date('d-m-Y h:i:s');
+                                        $orderDateTimeObj = new DateTime($orderDateTime);
+                                        $currentDateObj = new DateTime($currentDate);
+                                        $interval =  $orderDateTimeObj->diff($currentDateObj);
+                                        // echo ($interval->i); // get minute
+                                        if ($interval->h < 1) {
+                                        ?>
+                                            <form action="" method="post">
+                                                <a href='OrderEdit.php?mealName=<?= $perOrder->getMealName() ?>&mealID=<?= $perOrder->getID() ?>' class="btn btn-success font-monospace"> Edit</a>
+                                                <button type="submit" class="btn btn-danger" name="delete">Delete</button>
+                                                <input type="hidden" name="deleteID" value=<?= $perOrder->getID() ?>></button>
+                                            </form>
+                                        <?php
+                                        } else {
+                                        ?>
+                                            <h4><span class="badge bg-primary lg">Completed<i class="fa-solid fa-hexagon-check"></i></span></h4>
+                                        <?php
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php
+                            echo "</div>";
+                            echo "</div>";
+                            $OrderPriceTotal += $perOrder->getTotalPrice();
+                            $OrderNumber++;
+                        }
+                        ?>
+                    </div>
+                </div>
+                <p class="" style="padding-Top:1rem;padding-Left:2rem">Total Orders: <?= $OrderNumber ?>, Total Price: <?= $OrderPriceTotal ?></p>
+        </div>
+<?php
+
+                }
             }
         }
-?>

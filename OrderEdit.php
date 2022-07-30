@@ -82,7 +82,7 @@ if (isset($_POST['checkout'])){
         // OrderDAO::createOrderItem($orderItem);
         OrderDAO::editOrderItems($_GET['mealID'], $currentItem->getID(), $eachAmount);
     }
-    echo "<script type='text/javascript'>alert('Create Success');</script>";
+    // echo "<script type='text/javascript'>alert('Create Success');</script>";
     header("Location:OrderHistory.php");
 } else {
 
