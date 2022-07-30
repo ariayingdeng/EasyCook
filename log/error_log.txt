@@ -588,6 +588,46 @@ Stack trace:
 #3 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 45
 [28-Jul-2022 22:55:40 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:12) in E:\CSIS\Summer2022\3280\3280-project\Order.php on line 86
+[29-Jul-2022 03:12:35 Europe/Berlin] PHP Warning:  Undefined variable $loggedUser in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:76
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Home.php(44): Page::showHeader()
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:37 Europe/Berlin] PHP Warning:  Undefined variable $loggedUser in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:76
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Home.php(44): Page::showHeader()
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:41 Europe/Berlin] PHP Warning:  Undefined variable $loggedUser in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 03:12:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on null in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:76
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\Home.php(44): Page::showHeader()
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 76
+[29-Jul-2022 20:49:25 Europe/Berlin] Please enter your password with at least 8 characters.
+[29-Jul-2022 20:49:25 Europe/Berlin] Email has been taken.
+[29-Jul-2022 21:13:54 Europe/Berlin] Editting user account failed.
+[29-Jul-2022 21:13:54 Europe/Berlin] PHP Warning:  Undefined array key "email" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 27
+[29-Jul-2022 21:16:02 Europe/Berlin] PHP Warning:  Undefined array key "action" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[29-Jul-2022 21:17:58 Europe/Berlin] Editting user account failed.
+[29-Jul-2022 21:21:53 Europe/Berlin] Editting user account failed.
+[29-Jul-2022 21:24:37 Europe/Berlin] Editting user account failed.
+[29-Jul-2022 21:31:38 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:20:29 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:21:03 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:21:59 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:23:58 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:25:36 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:26:04 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:28:57 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:28:57 Europe/Berlin] PHP Warning:  Array to string conversion in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 231
+[30-Jul-2022 00:31:54 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:32:05 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:34:43 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:35:01 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 00:37:07 Europe/Berlin] Editting user account failed.
 
 [28-Jul-2022 23:03:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method OrderItem::getMealName() in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php:342
 Stack trace:
@@ -947,3 +987,4 @@ Stack trace:
 [30-Jul-2022 01:34:16 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 30
 [30-Jul-2022 01:34:44 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 30
 [30-Jul-2022 01:35:22 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 30
+[30-Jul-2022 02:02:32 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 474

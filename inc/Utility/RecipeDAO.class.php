@@ -51,6 +51,15 @@ class RecipeDAO
         return self::$db->getSetResult();
     }
 
+    // to get all the recipes that the user ordered
+    static function getRecipesByUserID($userID)
+    {
+        $recipes = [];
+        
+        
+        return $recipes;
+    }
+
     // to get the number of entities in the recipes table
     static function getRowCount() 
     {

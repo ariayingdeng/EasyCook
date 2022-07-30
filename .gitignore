@@ -1,0 +1,3 @@
+# ignore error log file
+log/error_log.txt
+inc/config.inc.php

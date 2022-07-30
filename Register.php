@@ -27,6 +27,7 @@ if (!empty($_POST) && $_POST["submit"] == "Register") {
         Page::$notifications = Validate::$messages;
     }
 }
+
 Page::showHeader();
 Page::showRegistration();
 Page::showFooter();

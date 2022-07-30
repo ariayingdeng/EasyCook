@@ -43,10 +43,9 @@ class UserDAO
     // update the current user profile
     static function updateUser(User $user)
     {
-        $sql = "UPDATE user SET email=:email, username=:username, password=:password, phoneNumber=:phoneNumber, address=:address WHERE id=:id";
+        $sql = "UPDATE user SET username=:username, password=:password, phoneNumber=:phoneNumber, address=:address WHERE email=:email";
 
         self::$db->query($sql);
-        self::$db->bind(":id", $user->getId());
         self::$db->bind(":email", $user->getEmail());
         self::$db->bind(":username", $user->getUsername());
         self::$db->bind(":password", $user->getPassword());
@@ -57,5 +56,7 @@ class UserDAO
 
         return self::$db->rowCount();
     }
+
+    
 
 }
