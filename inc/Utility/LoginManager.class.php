@@ -21,7 +21,7 @@ class LoginManager
     static function saveEditAccount()
     {
         // if the user info editting form is submitted
-        if (!empty($_POST) && $_POST['submit'] == "Save") {
+        if (isset($_POST['submit']) && $_POST['submit'] == "Save") {
             if (Validate::validateEditAccount()) {
                 $updatedUser = new User();
                 $updatedUser->setEmail(trim($_POST["email"]));

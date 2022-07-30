@@ -860,40 +860,22 @@ Stack trace:
 [29-Jul-2022 17:20:43 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\CSIS\Summer2022\3280\3280-project\OrderEdit.php:85) in E:\CSIS\Summer2022\3280\3280-project\OrderEdit.php on line 86
 [30-Jul-2022 02:24:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 361
 [30-Jul-2022 02:29:30 Europe/Berlin] Editting user account failed.
-[30-Jul-2022 03:10:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:45
-Stack trace:
-#0 C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php(37): PDOAgent->query('SELECT * FROM u...')
-#1 C:\xampp\htdocs\3280Project\OrderHistory.php(35): UserDAO::getUser('Aria@gmail.com')
-#2 {main}
-  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 45
-[30-Jul-2022 03:10:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:45
-Stack trace:
-#0 C:\xampp\htdocs\3280Project\inc\Utility\RecipeDAO.class.php(76): PDOAgent->query('SELECT * FROM r...')
-#1 C:\xampp\htdocs\3280Project\inc\Utility\RecipeService.class.php(10): RecipeDAO::getRowCount()
-#2 C:\xampp\htdocs\3280Project\Home.php(24): RecipeService::saveRecipes()
-#3 {main}
-  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 45
-[30-Jul-2022 03:10:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php:45
-Stack trace:
-#0 C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php(37): PDOAgent->query('SELECT * FROM u...')
-#1 C:\xampp\htdocs\3280Project\Recipes.php(31): UserDAO::getUser('Aria@gmail.com')
-#2 {main}
-  thrown in C:\xampp\htdocs\3280Project\inc\Utility\PDOAgent.class.php on line 45
-[30-Jul-2022 03:15:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\3280Project\inc\Entity\Page.class.php on line 458
-[30-Jul-2022 04:38:52 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35
-[30-Jul-2022 04:38:52 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
-Stack trace:
-#0 C:\xampp\htdocs\3280Project\OrderHistory.php(35): UserDAO::getUser(NULL)
-#1 {main}
-  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
-[30-Jul-2022 04:38:53 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35
-[30-Jul-2022 04:38:53 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
-Stack trace:
-#0 C:\xampp\htdocs\3280Project\OrderHistory.php(35): UserDAO::getUser(NULL)
-#1 {main}
-  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
-[30-Jul-2022 04:54:16 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35
-[30-Jul-2022 04:54:16 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
+[30-Jul-2022 04:00:43 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[30-Jul-2022 04:00:43 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 34
+[30-Jul-2022 04:10:12 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 244
+[30-Jul-2022 04:10:16 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 244
+[30-Jul-2022 04:10:20 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 244
+[30-Jul-2022 04:11:24 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[30-Jul-2022 04:11:24 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 34
+[30-Jul-2022 04:11:58 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 04:12:09 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[30-Jul-2022 04:12:09 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 34
+[30-Jul-2022 04:16:02 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
+[30-Jul-2022 04:28:33 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 243
+[30-Jul-2022 04:32:36 Europe/Berlin] Editting user account failed.
+>>>>>>> 12e04dedb05a8d9c7f61c884012ace41d2d437f4
+[30-Jul-2022 05:16:24 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35
+[30-Jul-2022 05:16:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 35 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
 Stack trace:
 #0 C:\xampp\htdocs\3280Project\OrderHistory.php(35): UserDAO::getUser(NULL)
 #1 {main}
