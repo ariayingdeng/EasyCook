@@ -246,6 +246,11 @@ class Page
                 <input class="btn btn-info" type="submit" name="search" value="SEARCH" />
             </div>
         </form>
+        <?php
+                if (!is_null(self::$notifications)) {
+                    echo "<p class='text-center fst-italic text-success fw-bold'>" . self::$notifications . "</p>";
+                }
+        ?>
         <div class="d-flex justify-content-between align-content-start flex-wrap" style="background-color: #FFFACD;">
             <?php
                 foreach ($recipes as $recipe) {

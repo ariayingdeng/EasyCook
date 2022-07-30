@@ -856,3 +856,4 @@ Stack trace:
 [30-Jul-2022 04:12:09 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\Home.php on line 34
 [30-Jul-2022 04:16:02 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
 [30-Jul-2022 04:28:33 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 243
+[30-Jul-2022 04:32:36 Europe/Berlin] Editting user account failed.
