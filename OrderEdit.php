@@ -28,7 +28,12 @@ if (LoginManager::verifyLogin()==false){
  OrderDAO::init();
  InventoryItemDAO::init();
  
+ if (LoginManager::verifyLogin()) {
+    // Check and save edit post
+    LoginManager::saveEditAccount();
+}
 
+// bug to be fixed: use session for mealName when order and confirm so the user info can be editted
  $currentMealName = RecipeService::getRecipe($_GET['mealName']);
  $currentMeal = $currentMealName->meals[0];
 
@@ -41,8 +46,6 @@ for ($i=1;$i<21;$i++){
        $ingredentArray[$currentMeal->$string]=0;
     }
 }
-
-
 
 $total=0;
 if (isset($_POST['checkout'])){

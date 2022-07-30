@@ -18,17 +18,20 @@ require_once("inc/Utility/Validate.class.php");
 
 
 // firstly verify user
-if (LoginManager::verifyLogin()==false){
+if (LoginManager::verifyLogin() == false) {
     header("Location:Login.php");
- }
+} else {
+    // Check and save edit post
+    LoginManager::saveEditAccount();
+}
 
 
 OrderDAO::init();
-UserDAO::init();   
+UserDAO::init();
 
 
 //if post = delete
-if (isset($_POST['delete'])){
+if (isset($_POST['delete'])) {
     OrderDAO::deleteOrderWithAllOrderItems($_POST['deleteID']);
 }
 
@@ -38,5 +41,3 @@ $orderListFromThisUser = OrderDAO::getOrderByUserID($currentUser->getId());
 Page::showHeader();
 Page::showOrderHistory(array_reverse($orderListFromThisUser));
 Page::showFooter();
-
-?>

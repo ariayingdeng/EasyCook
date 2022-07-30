@@ -472,6 +472,7 @@ class Page
                                     </div>
                                     <div class="col-auto" style="padding-top:  0.2rem;">
                                         <?php
+                                        // bug to be fixed: date
                                         date_default_timezone_set("America/Los_Angeles");
                                         $orderDateTime =  date('d-m-Y h:i:s', strtotime($perOrder->getDate() . $perOrder->getTime()));
                                         $currentDate = date('d-m-Y h:i:s');
