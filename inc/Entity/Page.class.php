@@ -37,13 +37,13 @@ class Page
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item fw-bold">
-                                <a class="nav-link active" aria-current="page" href="Home.php">Home</a>
+                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Home") ? "active" : "");?>" aria-current="page" href="Home.php">Home</a>
                             </li>
                             <li class="nav-item fw-bold">
-                                <a class="nav-link" href="Recipes.php">Recipes</a>
+                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Recipes") ? "active" : "");?>" href="Recipes.php">Recipes</a>
                             </li>
                             <li class="nav-item fw-bold">
-                                <a class="nav-link" href="OrderHistory.php" tabindex="-1" aria-disabled="true">Orders</a>
+                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "OrderHistory") ? "active" : "");?>" href="OrderHistory.php" tabindex="-1" aria-disabled="true">Orders</a>
                             </li>
                         </ul>
                         <form method="post" action="<?= $_SERVER['PHP_SELF']; ?>" class="d-flex">
@@ -289,8 +289,14 @@ class Page
             {
     ?>
         <div style="background-color: #FFFACD;">
-            <h5 class="d-flex justify-content-between p-3">The meals that you ordered:</h5>
             <?php
+                if (count($recipes) == 0) {
+                    echo "<h3 class='text-center'>No orders for now! Order now for recipes!</h3>";
+                    echo "<a href='Home.php'><img src='./images/ordernow.png' class='img-fluid rounded mx-auto d-block' alt='ordernow'></a>";
+                } else {
+                    echo "<h5 class='d-flex justify-content-between p-3'>The meals that you ordered:</h5>";
+                }
+
                 foreach ($recipes as $recipe) {
                     self::showOrderRecipeCard($recipe);
                 }

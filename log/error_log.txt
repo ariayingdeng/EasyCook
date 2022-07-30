@@ -857,3 +857,10 @@ Stack trace:
 [30-Jul-2022 04:16:02 Europe/Berlin] PHP Warning:  Undefined array key "submit" in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\LoginManager.class.php on line 24
 [30-Jul-2022 04:28:33 Europe/Berlin] PHP Warning:  Undefined array key "meal" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 243
 [30-Jul-2022 04:32:36 Europe/Berlin] Editting user account failed.
+[30-Jul-2022 04:51:01 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 35
+[30-Jul-2022 04:51:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 35 and defined in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php(35): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php on line 34
+[30-Jul-2022 04:55:23 Europe/Berlin] Regisration failed.
