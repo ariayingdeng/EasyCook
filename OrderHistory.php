@@ -25,9 +25,15 @@ if (LoginManager::verifyLogin()==false){
 
 OrderDAO::init();
 UserDAO::init();   
+
+
+//if post = delete
+if (isset($_POST['delete'])){
+    OrderDAO::deleteOrderWithAllOrderItems($_POST['deleteID']);
+}
+
 $currentUser = UserDAO::getUser($_SESSION['loggedemail']);
 $orderListFromThisUser = OrderDAO::getOrderByUserID($currentUser->getId());
-
 
 Page::showHeader();
 Page::showOrderHistory(array_reverse($orderListFromThisUser));

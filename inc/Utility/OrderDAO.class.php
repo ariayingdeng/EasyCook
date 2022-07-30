@@ -59,6 +59,44 @@ class OrderDAO
         return self::$orderItemDb->getSetResult();
     }
 
+    static function editOrders($orderID,$total){
+        date_default_timezone_set("America/Los_Angeles");
+        $sql = "UPDATE orders  SET totalPrice=:totalPrice, date=:date, currentTime=:currentTime WHERE id=:id";
+        self::$orderDb->query($sql);
+        self::$orderDb->bind(":id",$orderID);
+        self::$orderDb->bind(":totalPrice",$total);
+        self::$orderDb->bind(":date",date("Y/m/d"));
+        self::$orderDb->bind(":currentTime",date("H:i"));
+        self::$orderDb->execute();
+
+
+        // create a method to return 
+        return self::$orderItemDb->lastInsertedId();
+    }
+
+    static function editOrderItems($orderId,$inventoryID,$eachAmount){
+
+        date_default_timezone_set("America/Los_Angeles");
+        $sql = "UPDATE orderitem SET amount=:eachAmount WHERE orderID=:orderID AND inventoryID=:inventoryID";
+        self::$orderItemDb->query($sql);
+        self::$orderItemDb->bind(":eachAmount",$eachAmount);
+        self::$orderItemDb->bind(":orderID",$orderId);
+        self::$orderItemDb->bind(":inventoryID",$inventoryID);
+        self::$orderItemDb->execute();
+        // return self::$orderItemDb->getSetResult();
+    }
+
+    static function deleteOrderWithAllOrderItems($orderID){
+        $sql = "DELETE FROM orders WHERE id=:orderID";
+        self::$orderDb->query($sql);
+        self::$orderDb->bind(":orderID",$orderID);
+        self::$orderDb->execute();
+
+        $sql2 = "DELETE FROM orderitem WHERE orderID=:orderitemID";
+        self::$orderItemDb->query($sql2);
+        self::$orderItemDb->bind(":orderitemID",$orderID);
+        self::$orderItemDb->execute();
+    }
 }
 
 ?>

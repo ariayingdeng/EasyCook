@@ -404,7 +404,7 @@ class Page
 
         <div class="pt-3" style="background-color: #FFFACD;">
             <h2>Order History</h2>
-            <div class="card w-50 mx-auto " style="background-color: #fffce6;">
+            <div class="card mx-auto " style="width: 60%; background-color: #fffce6;">
                 <div id="accordion">
 
                     <?php
@@ -425,30 +425,44 @@ class Page
                         echo "<div id='collapse" . $perOrder->getID() . "' class='collapse' aria-labelledby='heading" . $perOrder->getID() . "' data-parent='#accordion'>";
                         echo " <div class='card-body'>";
                     ?>
-                        <div class="container">
+                        <div class="container-fluid">
                             <div class="row">
-                                <div class="col-5" style="padding-top: 0.4rem;">
-                                    <?= $perOrder->getDate() ?>
-
+                                <div class="col">
+                                    <img src=<?= $perOrder->getImageURL() ?> width="50rem" height="50rem" alt="picture1">
                                 </div>
-                                <div class="col-5" style="padding-top:  0.4rem;">
+                                <div class="col-3" style="padding-top:  0.7rem;">
+                                    Ordered on: <?= $perOrder->getDate() ?><?= $perOrder->getTime() ?>
+                                </div>
+                                <div class="col-3" style="padding-top:  0.7rem;">
                                     Total price: $<?= $perOrder->getTotalPrice() ?>
                                 </div>
-                                <div class="col-auto">
-                                    <!-- <button type="button" class="btn btn-outline-success">Edit</button> -->
-                                    <?= $perOrder->getTime() ?>
+                                <div class="col" style="padding-top:  0.5rem;">
+                                    <?php
+                                    date_default_timezone_set("America/Los_Angeles");
+                                    $orderDateTime =  date('d-m-Y h:i:s', strtotime($perOrder->getDate() . $perOrder->getTime()));
+                                    $currentDate = date('d-m-Y h:i:s');
+                                    $orderDateTimeObj = new DateTime($orderDateTime);
+                                    $currentDateObj = new DateTime($currentDate);
+                                    $interval =  $orderDateTimeObj->diff($currentDateObj);
+                                    // echo ($interval->i); // get minute
+                                    if ($interval->i <= 60) {
+                                    ?>
+                                        <form action="" method="post">
+                                            <a href='OrderEdit.php?mealName=<?= $perOrder->getMealName() ?>&mealID=<?= $perOrder->getID() ?>' class="btn btn-success font-monospace"> Edit</a>
+                                            <button type="submit" class="btn btn-danger" name="delete">Delete</button>
+                                            <input type="hidden" name="deleteID" value=<?= $perOrder->getID() ?>></button>
+                                        </form>
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                             </div>
                         </div>
-
                     <?php
-                        echo "</div>";
                         echo "</div>";
                         echo "</div>";
                         $i++;
                     }
-
-
                     ?>
                 </div>
             </div>
@@ -456,5 +470,4 @@ class Page
 <?php
             }
         }
-
 ?>

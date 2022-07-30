@@ -835,3 +835,12 @@ Stack trace:
 #1 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(35): Page::showOrderRecipes(Array)
 #2 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 298
+[30-Jul-2022 02:18:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getImageURL() on bool in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php:298
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php(284): Page::showOrderRecipeCard(false)
+#1 E:\CSIS\Summer2022\3280\3280-project\Recipes.php(35): Page::showOrderRecipes(Array)
+#2 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 298
+[29-Jul-2022 17:20:43 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\CSIS\Summer2022\3280\3280-project\OrderEdit.php:85) in E:\CSIS\Summer2022\3280\3280-project\OrderEdit.php on line 86
+[30-Jul-2022 02:24:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";" in E:\CSIS\Summer2022\3280\3280-project\inc\Entity\Page.class.php on line 361
+[30-Jul-2022 02:29:30 Europe/Berlin] Editting user account failed.
