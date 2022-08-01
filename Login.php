@@ -24,7 +24,7 @@ if (!empty($_POST) && $_POST["submit"] == "Login") {
 
 if (LoginManager::verifyLogin()) {
     $loggedUser = UserDAO::getUser($_SESSION['loggedemail']);
-    header('Location: Home.php');
+    header('Location: Team07.php');
     exit;
 } else {
     Page::showHeader();

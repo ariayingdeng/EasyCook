@@ -36,7 +36,7 @@ class Page
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item fw-bold">
-                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Home") ? "active" : ""); ?>" aria-current="page" href="Home.php">Home</a>
+                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Home") ? "active" : ""); ?>" aria-current="page" href="Team07.php">Home</a>
                             </li>
                             <li class="nav-item fw-bold">
                                 <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Recipes") ? "active" : ""); ?>" href="Recipes.php">Recipes</a>
@@ -354,7 +354,7 @@ class Page
                             foreach ($ingredents as $ingredent => $amount) {
                                 echo '<div class="input-group mb-3">';
                                 echo '<span class="input-group-text">' . $ingredent . '</span>';
-                                echo '<input type="number" class="form-control" name=' . str_replace(' ', '', $ingredent) . ' placeholder="1" value="1" required>';
+                                echo '<input type="number" class="form-control" name=' . str_replace(' ', '', $ingredent) . ' placeholder="1" value="1"  min="0" required>';
                                 echo '</div>';
                             }
                             ?>
@@ -482,7 +482,7 @@ class Page
                                         $currentDateObj = new DateTime($currentDate);
                                         $interval =  $orderDateTimeObj->diff($currentDateObj);
                                         // echo ($interval->i); // get minute
-                                        if ($interval->h < 1&&$interval->m==0&&$interval->m==0&&$interval->y==0) {
+                                        if ($interval->h < 1 && $interval->m == 0 && $interval->m == 0 && $interval->y == 0) {
                                         ?>
                                             <form action="" method="post">
                                                 <a href='OrderEdit.php?mealName=<?= $perOrder->getMealName() ?>&mealID=<?= $perOrder->getID() ?>' class="btn btn-success font-monospace"> Edit</a>
@@ -508,7 +508,10 @@ class Page
                         ?>
                     </div>
                 </div>
-                <p class="" style="padding-Top:1rem;padding-Left:2rem">Total Orders: <?= $OrderNumber ?>, Total Price: <?= $OrderPriceTotal ?></p>
+                <ul class="" style="padding-Top:1rem;padding-Left:2rem;list-style-type:none;">
+                    <li>Total Orders: <strong><?= $OrderNumber ?></strong></li>
+                    <li>Total Price: <strong>$<?= $OrderPriceTotal ?></strong></li>
+                </ul>
         </div>
 <?php
 
