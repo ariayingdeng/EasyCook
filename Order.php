@@ -19,9 +19,6 @@ require_once("inc/Utility/OrderDAO.class.php");
 // firstly verify user
 if (LoginManager::verifyLogin() == false) {
     header("Location:Login.php");
-} else {
-    // Check and save edit post
-    LoginManager::saveEditAccount();
 }
 
 RecipeDAO::init();
@@ -29,7 +26,6 @@ UserDAO::init();
 OrderDAO::init();
 InventoryItemDAO::init();
 
-// bug to be fixed: use session for mealName when order and confirm so the user info can be editted
 $currentMealName = RecipeService::getRecipe($_GET['mealName']);
 $currentMeal = $currentMealName->meals[0];
 

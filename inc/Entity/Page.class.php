@@ -31,18 +31,18 @@ class Page
                 <div class="container-fluid">
                     <a class="navbar-brand" href="Home.php">
                         <!-- TODO: add icon for the project -->
-                         Easy Cook
+                        Easy Cook
                     </a>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item fw-bold">
-                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Home") ? "active" : "");?>" aria-current="page" href="Home.php">Home</a>
+                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Home") ? "active" : ""); ?>" aria-current="page" href="Home.php">Home</a>
                             </li>
                             <li class="nav-item fw-bold">
-                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Recipes") ? "active" : "");?>" href="Recipes.php">Recipes</a>
+                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Recipes") ? "active" : ""); ?>" href="Recipes.php">Recipes</a>
                             </li>
                             <li class="nav-item fw-bold">
-                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "OrderHistory") ? "active" : "");?>" href="OrderHistory.php" tabindex="-1" aria-disabled="true">Orders</a>
+                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "OrderHistory") ? "active" : ""); ?>" href="OrderHistory.php" tabindex="-1" aria-disabled="true">Orders</a>
                             </li>
                         </ul>
                         <form method="post" action="<?= $_SERVER['PHP_SELF']; ?>" class="d-flex">
@@ -50,61 +50,63 @@ class Page
                             if (isset($_SESSION['loggedemail'])) {
                                 $loggedUser = UserDAO::getUser($_SESSION['loggedemail']);
                                 echo "<a class='btn btn-outline-light font-monospace' href='Logout.php'>Logout</a>&nbsp;&nbsp;";
+                                if (!isset($_GET['mealName'])) {
                             ?>
-                                <!-- Modified from modal example from Bootstrap: https://getbootstrap.com/docs/5.0/components/modal/ -->
-                                <!-- Edit User Account -->
-                                <button type="button" class="btn btn-outline-light rounded-circle" data-bs-toggle="modal" data-bs-target="#editUser">
-                                    <i class='fa-solid fa-gear'></i>
-                                </button>
+                                    <!-- Modified from modal example from Bootstrap: https://getbootstrap.com/docs/5.0/components/modal/ -->
+                                    <!-- Edit User Account -->
+                                    <button type="button" class="btn btn-outline-light rounded-circle" data-bs-toggle="modal" data-bs-target="#editUser">
+                                        <i class='fa-solid fa-gear'></i>
+                                    </button>
 
-                                <div class="modal fade" id="editUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="staticBackdropLabel">Settings</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <div class="modal fade" id="editUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Settings</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Email Address</span>
+                                                        <input type="email" class="form-control" id="e-email" name="email" placeholder="Edit your email address" value="<?= $loggedUser->getEmail(); ?>" disabled>
+                                                        <input type="hidden" name="email" value="<?= $loggedUser->getEmail(); ?>">
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Username</span>
+                                                        <input type="text" class="form-control" id="e-username" name="username" placeholder="Edit your username" value="<?= $loggedUser->getUsername(); ?>" required>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Contact Number</span>
+                                                        <input type="text" class="form-control" id="e-phonenumber" name="phonenumber" placeholder="Edit your contact number" value="<?= $loggedUser->getPhoneNumber(); ?>" required>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Address</span>
+                                                        <input type="text" class="form-control" id="e-address" name="address" placeholder="Edit your address" value="<?= $loggedUser->getAddress(); ?>" required>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Password</span>
+                                                        <input type="password" class="form-control" id="e-password" name="password" placeholder="Enter your password" required>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Password Confirm</span>
+                                                        <input type="password" class="form-control" id="e-password2" name="password2" placeholder="Confirm your password" required>
+                                                    </div>
+                                                    <span id="passwordInline" class="form-text">
+                                                        Must be at least 8 characters long.
+                                                    </span>
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                    <input type="submit" name="submit" class="btn btn-success" value="Save">
+                                                </div>
+
                                             </div>
-
-                                            <div class="modal-body">
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Email Address</span>
-                                                    <input type="email" class="form-control" id="e-email" name="email" placeholder="Edit your email address" value="<?= $loggedUser->getEmail(); ?>" disabled>
-                                                    <input type="hidden" name="email" value="<?= $loggedUser->getEmail(); ?>">
-                                                </div>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Username</span>
-                                                    <input type="text" class="form-control" id="e-username" name="username" placeholder="Edit your username" value="<?= $loggedUser->getUsername(); ?>" required>
-                                                </div>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Contact Number</span>
-                                                    <input type="text" class="form-control" id="e-phonenumber" name="phonenumber" placeholder="Edit your contact number" value="<?= $loggedUser->getPhoneNumber(); ?>" required>
-                                                </div>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Address</span>
-                                                    <input type="text" class="form-control" id="e-address" name="address" placeholder="Edit your address" value="<?= $loggedUser->getAddress(); ?>" required>
-                                                </div>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Password</span>
-                                                    <input type="password" class="form-control" id="e-password" name="password" placeholder="Enter your password" required>
-                                                </div>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" style="width: 32%; background-color: #fffce6;">Password Confirm</span>
-                                                    <input type="password" class="form-control" id="e-password2" name="password2" placeholder="Confirm your password" required>
-                                                </div>
-                                                <span id="passwordInline" class="form-text">
-                                                    Must be at least 8 characters long.
-                                                </span>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                                <input type="submit" name="submit" class="btn btn-success" value="Save">
-                                            </div>
-
                                         </div>
                                     </div>
-                                </div>
                             <?php
+                                }
                             } else {
                                 echo "<a class='btn btn-outline-light font-monospace' href='Register.php'>Register</a>&nbsp;&nbsp;&nbsp;&nbsp;";
                                 echo "<a class='btn btn-outline-light font-monospace' href='Login.php'>Login</a>";
