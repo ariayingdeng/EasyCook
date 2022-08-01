@@ -90,6 +90,8 @@ if (isset($_POST['checkout'])){
 
 Page::showFooter();
 
+?>
+
 
 
 

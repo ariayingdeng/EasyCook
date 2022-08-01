@@ -89,3 +89,5 @@ if (isset($_POST['checkout'])) {
     Page::showOrder($currentMeal, $ingredentArray);
 }
 Page::showFooter();
+
+?>

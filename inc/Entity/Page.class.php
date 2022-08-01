@@ -5,7 +5,7 @@ class Page
 
     public static $heading = "Easy Cook";
     public static $notifications;
-
+    public static $message;
 
     static function showHeader()
     { ?>
@@ -36,7 +36,7 @@ class Page
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item fw-bold">
-                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Home") ? "active" : ""); ?>" aria-current="page" href="Team07.php">Home</a>
+                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Team07") ? "active" : ""); ?>" aria-current="page" href="Team07.php">Home</a>
                             </li>
                             <li class="nav-item fw-bold">
                                 <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Recipes") ? "active" : ""); ?>" href="Recipes.php">Recipes</a>
@@ -117,24 +117,14 @@ class Page
                     </div>
                 </div>
             </nav>
-
-            <div class="pt-3" style="background-color: #FFFACD;">
-                <!-- ends at the showHome and showOrderRecipes -->
-                <?php
-                if (!is_null(self::$notifications)) {
-                    echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
-                    foreach (self::$notifications as $msg) {
-                        echo "<li>" . $msg . "</li>";
-                    }
-                    echo "</ul></div>";
-                }
-            }
+        <?php
+    }
 
 
-            static function showFooter()
-            { ?>
-                <!-- JavaScript Bundle with Popper -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    static function showFooter()
+    { ?>
+            <!-- JavaScript Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         </body>
 
         </html>
@@ -142,15 +132,16 @@ class Page
     <?php }
 
 
-            static function showLogin()
-            { ?>
+    static function showLogin()
+    { ?>
+        <!-- Show error message when login -->
         <div class="pt-3" style="background-color: #FFFACD;">
             <?php
-                if (!is_null(self::$notifications)) {
-                    echo "<div class='alert alert-danger mx-auto text-center' role='alert' style='width: 45rem;'>";
-                    echo self::$notifications;
-                    echo "</div>";
-                }
+            if (!is_null(self::$message)) {
+                echo "<div class='alert alert-danger mx-auto text-center' role='alert' style='width: 45rem;'>";
+                echo self::$message;
+                echo "</div>";
+            }
             ?>
             <div class="card align-items-center mx-auto py-2" style="background-color: #fffce6; width: 45rem;">
                 <form action="" method="post">
@@ -174,17 +165,18 @@ class Page
     <?php }
 
 
-            static function showRegistration()
-            { ?>
+    static function showRegistration()
+    { ?>
+        <!-- Show error notifications for registration -->
         <div class="pt-3" style="background-color: #FFFACD;">
             <?php
-                if (!is_null(self::$notifications)) {
-                    echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
-                    foreach (self::$notifications as $msg) {
-                        echo "<li>" . $msg . "</li>";
-                    }
-                    echo "</ul></div>";
+            if (!is_null(self::$notifications)) {
+                echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
+                foreach (self::$notifications as $msg) {
+                    echo "<li>" . $msg . "</li>";
                 }
+                echo "</ul></div>";
+            }
             ?>
             <div class="card align-items-center mx-auto py-2" style="background-color: #fffce6; width: 45rem;">
                 <form action="" method="post">
@@ -227,45 +219,57 @@ class Page
     <?php }
 
 
-            static function showLogout($user)
-            {
+    static function showLogout($user)
+    {
     ?>
         <div class="alert alert-warning text-center m-0" role="alert">
             <h2>Thank you for your visit, <?php echo $user->getUsername(); ?>!</h2>
         </div>
         <img src="<?php echo IMAGES . "/logout.jpg" ?>" class="img-fluid rounded mx-auto d-block" alt="logout">
     <?php
-            }
+    }
 
 
-            static function showHome($recipes)
-            {
+    static function showHome($recipes)
+    {
     ?>
-        <form method="post" action="<?php echo $_SERVER['PHP_SELF'] . "?search" ?>">
-            <div class="input-group mx-auto my-2" style="width: 40rem; height: 3rem;">
-                <input type="text" class="form-control" id="meal" name="meal" placeholder="Search for meals..." value="" required>
-                <input class="btn btn-info" type="submit" name="search" value="SEARCH" />
-            </div>
-        </form>
-        <?php
-                if (!is_null(self::$notifications)) {
-                    echo "<p class='text-center fst-italic text-success fw-bold'>" . self::$notifications . "</p>";
-                }
-        ?>
-        <div class="d-flex justify-content-between align-content-start flex-wrap" style="background-color: #FFFACD;">
+        <!-- Show error notifications for editting profile -->
+        <div class="pt-3" style="background-color: #FFFACD;">
             <?php
+            if (!is_null(self::$notifications)) {
+                echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
+                foreach (self::$notifications as $msg) {
+                    echo "<li>" . $msg . "</li>";
+                }
+                echo "</ul></div>";
+            }
+            ?>
+            <form method="post" action="<?php echo $_SERVER['PHP_SELF'] . "?search" ?>">
+                <div class="input-group mx-auto my-2" style="width: 40rem; height: 3rem;">
+                    <input type="text" class="form-control" id="meal" name="meal" placeholder="Search for meals..." value="" required>
+                    <input class="btn btn-info" type="submit" name="search" value="SEARCH" />
+                </div>
+            </form>
+             <!-- Show the message for searching result -->
+            <?php
+            if (!is_null(self::$message)) {
+                echo "<p class='text-center fst-italic text-success fw-bold'>" . self::$message . "</p>";
+            }
+            ?>
+            <div class="d-flex justify-content-between align-content-start flex-wrap" style="background-color: #FFFACD;">
+                <?php
                 foreach ($recipes as $recipe) {
                     self::showRecipeCard($recipe);
                 }
-            ?>
-        </div>
+                ?>
+            </div>
         </div>
 
     <?php
-            }
+    }
 
-            static function showRecipeCard($recipe)
-            {
+    static function showRecipeCard($recipe)
+    {
     ?>
         <div class="card mt-3 mb-3" style="width: 18rem;" style="background-color: #fffce6;">
             <img src="<?= $recipe->getImageURL(); ?>" class="card-img-top" alt="MealPic">
@@ -283,17 +287,28 @@ class Page
             </div>
         </div>
     <?php
-            }
+    }
 
-            // show the recipes that the user has ordered
-            static function showOrderRecipes($recipes)
-            {
+    // show the recipes that the user has ordered
+    static function showOrderRecipes($recipes)
+    {
     ?>
-        <div style="background-color: #FFFACD;">
+        <!-- Show error notifications for editting profile -->
+        <div class="pt-3" style="background-color: #FFFACD;">
             <?php
+            if (!is_null(self::$notifications)) {
+                echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
+                foreach (self::$notifications as $msg) {
+                    echo "<li>" . $msg . "</li>";
+                }
+                echo "</ul></div>";
+            }
+            ?>
+            <div style="background-color: #FFFACD;">
+                <?php
                 if (count($recipes) == 0) {
                     echo "<h3 class='text-center'>No orders for now! Order now for recipes!</h3>";
-                    echo "<a href='Home.php'><img src='./images/ordernow.png' class='img-fluid rounded mx-auto d-block' alt='ordernow'></a>";
+                    echo "<a href='Team07.php'><img src='./images/ordernow.png' class='img-fluid rounded mx-auto d-block' alt='ordernow'></a>";
                 } else {
                     echo "<h5 class='d-flex justify-content-between p-3'>The meals that you ordered:</h5>";
                 }
@@ -301,14 +316,14 @@ class Page
                 foreach ($recipes as $recipe) {
                     self::showOrderRecipeCard($recipe);
                 }
-            ?>
-        </div>
+                ?>
+            </div>
         </div>
     <?php
-            }
+    }
 
-            static function showOrderRecipeCard($recipe)
-            {
+    static function showOrderRecipeCard($recipe)
+    {
     ?>
         <div class="card mb-5 rounded" style="background-color: #fffce6;">
             <div class="row g-0">
@@ -335,12 +350,12 @@ class Page
             </div>
         </div>
     <?php
-            }
+    }
 
 
-            //Order Page; 
-            static function showOrder($recipe, $ingredents)
-            {
+    //Order Page; 
+    static function showOrder($recipe, $ingredents)
+    {
 
     ?>
         <div class="pt-3" style="background-color: #FFFACD;">
@@ -366,11 +381,11 @@ class Page
             </div>
         </div>
     <?php
-            }
+    }
 
-            static function showOrderDetails($ingredents, $total)
-            {
-                $stringOfIngredients = "";
+    static function showOrderDetails($ingredents, $total)
+    {
+        $stringOfIngredients = "";
     ?>
         <div class="pt-3" style="background-color: #FFFACD;">
             <div class="card w-50 align-items-center mx-auto py-2" style="background-color: #fffce6;">
@@ -412,107 +427,117 @@ class Page
             </div>
         </div>
     <?php
-            }
+    }
 
 
 
-            static function showOrderHistory($allOrders)
-            {
-
+    static function showOrderHistory($allOrders)
+    {
     ?>
+        <!-- Show error notifications for editting profile -->
         <div class="pt-3" style="background-color: #FFFACD;">
-            <h2>Order History</h2>
-
             <?php
+            if (!is_null(self::$notifications)) {
+                echo "<div class='alert alert-danger mx-auto' role='alert' style=' width: 45rem;'><ul>";
+                foreach (self::$notifications as $msg) {
+                    echo "<li>" . $msg . "</li>";
+                }
+                echo "</ul></div>";
+            }
+            ?>
+            <div class="pt-3" style="background-color: #FFFACD;">
+                <h2>Order History</h2>
+
+                <?php
 
                 if (count($allOrders) == 0) {
-            ?>
+                ?>
 
-                <div class="alert alert-warning text-center m-0" role="alert">
-                    <h2>No orders now, start your orders immediately!</h2>
-                </div>
-                <img src="<?php echo IMAGES . "/order.jpg" ?>" class="img-fluid rounded mx-auto d-block" alt="logout">
+                    <div class="alert alert-warning text-center m-0" role="alert">
+                        <h2>No orders now, start your orders immediately!</h2>
+                    </div>
+                    <img src="<?php echo IMAGES . "/order.jpg" ?>" class="img-fluid rounded mx-auto d-block" alt="logout">
 
-            <?php
+                <?php
                 } else {
                     $OrderNumber = 0;
                     $OrderPriceTotal = 0;
-            ?>
-                <div class="card mx-auto " style="width: 60%; background-color: #fffce6;">
-                    <div id="accordion">
-                        <?php
-                        foreach ($allOrders as $perOrder) {
-                            echo "<div class='card'>";
-                            echo "<div class='card-header' id='heading" . $perOrder->getID() . "'>";
-                        ?>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-9">
-                                        <h2 class='mb-0'>
-                                            <button class='btn btn-link' data-toggle='collapse' data-target='#collapse<?= $perOrder->getID() ?>' aria-controls='collapse<?= $perOrder->getID() ?>'>
-                                                <?= $perOrder->getMealName() ?>
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div class="col-auto" style="padding-top:  0.8rem;">
-                                        <?= $perOrder->getDate() ?> <?= $perOrder->getTime() ?>
-                                    </div>
-                                </div>
-                            </div>
+                ?>
+                    <div class="card mx-auto " style="width: 60%; background-color: #fffce6;">
+                        <div id="accordion">
                             <?php
-                            echo "</div>";
-                            echo "<div id='collapse" . $perOrder->getID() . "' class='collapse' aria-labelledby='heading" . $perOrder->getID() . "' data-parent='#accordion'>";
-                            echo " <div class='card-body'>";
+                            foreach ($allOrders as $perOrder) {
+                                echo "<div class='card'>";
+                                echo "<div class='card-header' id='heading" . $perOrder->getID() . "'>";
                             ?>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <img src=<?= $perOrder->getImageURL() ?> width="50rem" height="50rem" alt="picture1">
-                                    </div>
-                                    <div class="col-4" style="padding-top:  0.7rem;">
-                                        Total price: $<?= $perOrder->getTotalPrice() ?>
-                                    </div>
-                                    <div class="col-auto" style="padding-top:  0.2rem;">
-                                        <?php
-                                        // bug to be fixed: date
-                                        date_default_timezone_set("America/Los_Angeles");
-                                        $orderDateTime =  date('d-m-Y h:i:s', strtotime($perOrder->getDate() . $perOrder->getTime()));
-                                        $currentDate = date('d-m-Y h:i:s');
-                                        $orderDateTimeObj = new DateTime($orderDateTime);
-                                        $currentDateObj = new DateTime($currentDate);
-                                        $interval =  $orderDateTimeObj->diff($currentDateObj);
-                                        // echo ($interval->i); // get minute
-                                        if ($interval->h < 1 && $interval->m == 0 && $interval->m == 0 && $interval->y == 0) {
-                                        ?>
-                                            <form action="" method="post">
-                                                <a href='OrderEdit.php?mealName=<?= $perOrder->getMealName() ?>&mealID=<?= $perOrder->getID() ?>' class="btn btn-success font-monospace"> Edit</a>
-                                                <button type="submit" class="btn btn-danger" name="delete">Delete</button>
-                                                <input type="hidden" name="deleteID" value=<?= $perOrder->getID() ?>></button>
-                                            </form>
-                                        <?php
-                                        } else {
-                                        ?>
-                                            <h4><span class="badge bg-primary lg">Completed<i class="fa-solid fa-hexagon-check"></i></span></h4>
-                                        <?php
-                                        }
-                                        ?>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h2 class='mb-0'>
+                                                <button class='btn btn-link' data-toggle='collapse' data-target='#collapse<?= $perOrder->getID() ?>' aria-controls='collapse<?= $perOrder->getID() ?>'>
+                                                    <?= $perOrder->getMealName() ?>
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div class="col-auto" style="padding-top:  0.8rem;">
+                                            <?= $perOrder->getDate() ?> <?= $perOrder->getTime() ?>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        <?php
-                            echo "</div>";
-                            echo "</div>";
-                            $OrderPriceTotal += $perOrder->getTotalPrice();
-                            $OrderNumber++;
-                        }
-                        ?>
+                                <?php
+                                echo "</div>";
+                                echo "<div id='collapse" . $perOrder->getID() . "' class='collapse' aria-labelledby='heading" . $perOrder->getID() . "' data-parent='#accordion'>";
+                                echo " <div class='card-body'>";
+                                ?>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <img src=<?= $perOrder->getImageURL() ?> width="50rem" height="50rem" alt="picture1">
+                                        </div>
+                                        <div class="col-4" style="padding-top:  0.7rem;">
+                                            Total price: $<?= $perOrder->getTotalPrice() ?>
+                                        </div>
+                                        <div class="col-auto" style="padding-top:  0.2rem;">
+                                            <?php
+                                            // bug to be fixed: date
+                                            date_default_timezone_set("America/Los_Angeles");
+                                            $orderDateTime =  date('d-m-Y h:i:s', strtotime($perOrder->getDate() . $perOrder->getTime()));
+                                            $currentDate = date('d-m-Y h:i:s');
+                                            $orderDateTimeObj = new DateTime($orderDateTime);
+                                            $currentDateObj = new DateTime($currentDate);
+                                            $interval =  $orderDateTimeObj->diff($currentDateObj);
+                                            // echo ($interval->i); // get minute
+                                            if ($interval->h < 1 && $interval->m == 0 && $interval->m == 0 && $interval->y == 0) {
+                                            ?>
+                                                <form action="" method="post">
+                                                    <a href='OrderEdit.php?mealName=<?= $perOrder->getMealName() ?>&mealID=<?= $perOrder->getID() ?>' class="btn btn-success font-monospace"> Edit</a>
+                                                    <button type="submit" class="btn btn-danger" name="delete">Delete</button>
+                                                    <input type="hidden" name="deleteID" value=<?= $perOrder->getID() ?>></button>
+                                                </form>
+                                            <?php
+                                            } else {
+                                            ?>
+                                                <h4><span class="badge bg-primary lg">Completed<i class="fa-solid fa-hexagon-check"></i></span></h4>
+                                            <?php
+                                            }
+                                            ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php
+                                echo "</div>";
+                                echo "</div>";
+                                $OrderPriceTotal += $perOrder->getTotalPrice();
+                                $OrderNumber++;
+                            }
+                            ?>
+                        </div>
                     </div>
-                </div>
-                <ul class="" style="padding-Top:1rem;padding-Left:2rem;list-style-type:none;">
-                    <li>Total Orders: <strong><?= $OrderNumber ?></strong></li>
-                    <li>Total Price: <strong>$<?= $OrderPriceTotal ?></strong></li>
-                </ul>
-        </div>
+                    <ul class="" style="padding-Top:1rem;padding-Left:2rem;list-style-type:none;">
+                        <li>Total Orders: <strong><?= $OrderNumber ?></strong></li>
+                        <li>Total Price: <strong>$<?= $OrderPriceTotal ?></strong></li>
+                    </ul>
+            </div>
 <?php
 
                 }

@@ -41,3 +41,5 @@ $orderListFromThisUser = OrderDAO::getOrderByUserID($currentUser->getId());
 Page::showHeader();
 Page::showOrderHistory(array_reverse($orderListFromThisUser));
 Page::showFooter();
+
+?>

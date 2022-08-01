@@ -1,6 +1,6 @@
 <?php
 
-// require once all the files
+// require once the files
 require_once("inc/config.inc.php");
 require_once("inc/Entity/User.class.php");
 require_once("inc/Entity/Page.class.php");

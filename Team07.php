@@ -35,7 +35,7 @@ if (isset($_POST['search'])) {
     // show results
     $recipes = RecipeDAO::searchMeals($_POST['meal']);
     $msg = count($recipes) . " result(s) for " . $_POST['meal'];
-    Page::$notifications = $msg;
+    Page::$message = $msg;
 
     Page::showHome($recipes);
 } else {

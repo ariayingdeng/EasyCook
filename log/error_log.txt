@@ -957,3 +957,19 @@ Stack trace:
 #0 E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php(38): UserDAO::getUser(NULL)
 #1 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php on line 34
+[02-Aug-2022 01:30:51 Europe/Berlin] Editting user account failed.
+[02-Aug-2022 01:31:14 Europe/Berlin] Editting user account failed.
+[02-Aug-2022 01:31:22 Europe/Berlin] Editting user account failed.
+[02-Aug-2022 01:31:38 Europe/Berlin] Regisration failed.
+[02-Aug-2022 01:31:51 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 38
+[02-Aug-2022 01:31:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 38 and defined in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php(38): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php on line 34
+[02-Aug-2022 01:31:55 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 38
+[02-Aug-2022 01:31:55 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 38 and defined in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php(38): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php on line 34
