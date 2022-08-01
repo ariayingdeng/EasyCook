@@ -943,3 +943,9 @@ Stack trace:
 #2 E:\CSIS\Summer2022\3280\3280-project\Home.php(24): RecipeService::saveRecipes()
 #3 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 45
+[01-Aug-2022 23:48:10 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 38
+[01-Aug-2022 23:48:10 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php on line 38 and defined in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php(38): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php on line 34

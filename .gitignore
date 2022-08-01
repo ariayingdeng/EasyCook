@@ -1,4 +1,4 @@
 # ignore error log file
-log/error_log.txt
+/log/error_log.txt
 # ignore config
-inc/config.inc.php
+/inc/config.inc.php
