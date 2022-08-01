@@ -3,6 +3,7 @@
 class LoginManager
 {
 
+    // This method is from the class demo in CSIS3280
     static function verifyLogin()
     {
 

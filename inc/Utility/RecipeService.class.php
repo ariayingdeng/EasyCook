@@ -13,15 +13,6 @@ class RecipeService
             foreach ($recipesRaw->meals as $recipeRaw) {
                 $mealName = $recipeRaw->strMeal;
                 if ($mealName != 'Rappie Pie') {
-                    // $recipeDetailsRaw = self::getRecipe($mealName);
-                    // $recipeDetails = $recipeDetailsRaw->meals[0];
-                    // $recipe = new Recipe();
-                    // $recipe->setMealId($recipeDetails->idMeal);
-                    // $recipe->setMealName($recipeDetails->strMeal);
-                    // $recipe->setMealInstructions($recipeDetails->strInstructions);
-                    // $recipe->setImageURL($recipeDetails->strMealThumb);
-                    // $recipe->setCategory($recipeDetails->strCategory);
-                    // $recipe->setTags($recipeDetails->strTags);
                     $recipe = self::getRecipeObject($mealName);
 
                     RecipeDAO::saveRecipe($recipe);
