@@ -936,3 +936,10 @@ Stack trace:
 #0 C:\xampp\htdocs\3280Project\OrderHistory.php(38): UserDAO::getUser(NULL)
 #1 {main}
   thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
+[01-Aug-2022 23:44:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php:45
+Stack trace:
+#0 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeDAO.class.php(86): PDOAgent->query('SELECT * FROM r...')
+#1 E:\CSIS\Summer2022\3280\3280-project\inc\Utility\RecipeService.class.php(10): RecipeDAO::getRowCount()
+#2 E:\CSIS\Summer2022\3280\3280-project\Home.php(24): RecipeService::saveRecipes()
+#3 {main}
+  thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\PDOAgent.class.php on line 45
