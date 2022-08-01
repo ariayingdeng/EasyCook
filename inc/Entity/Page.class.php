@@ -480,7 +480,7 @@ class Page
                                         $currentDateObj = new DateTime($currentDate);
                                         $interval =  $orderDateTimeObj->diff($currentDateObj);
                                         // echo ($interval->i); // get minute
-                                        if ($interval->h < 1) {
+                                        if ($interval->h < 1&&$interval->m==0&&$interval->m==0&&$interval->y==0) {
                                         ?>
                                             <form action="" method="post">
                                                 <a href='OrderEdit.php?mealName=<?= $perOrder->getMealName() ?>&mealID=<?= $perOrder->getID() ?>' class="btn btn-success font-monospace"> Edit</a>

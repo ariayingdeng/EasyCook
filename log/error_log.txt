@@ -921,3 +921,11 @@ Stack trace:
 [30-Jul-2022 19:34:18 Europe/Berlin] Editting user account failed.
 [30-Jul-2022 19:34:18 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in E:\CSIS\Summer2022\3280\3280-project\Order.php on line 33
 [30-Jul-2022 19:34:29 Europe/Berlin] Editting user account failed.
+[01-Aug-2022 18:20:13 Europe/Berlin] Editting user account failed.
+[01-Aug-2022 18:20:13 Europe/Berlin] PHP Warning:  Undefined array key "mealName" in C:\xampp\htdocs\3280Project\Order.php on line 33
+[01-Aug-2022 23:10:30 Europe/Berlin] PHP Warning:  Undefined array key "loggedemail" in C:\xampp\htdocs\3280Project\OrderHistory.php on line 38
+[01-Aug-2022 23:10:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: UserDAO::getUser(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\3280Project\OrderHistory.php on line 38 and defined in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php:34
+Stack trace:
+#0 C:\xampp\htdocs\3280Project\OrderHistory.php(38): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\3280Project\inc\Utility\UserDAO.class.php on line 34
