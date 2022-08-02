@@ -5,6 +5,7 @@ class RecipeService
     private static $recipesURL = "https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian";
     private static $recipeURLPre = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
+    // to save all recipes from the API in our databases if the recipes have not been stored yet
     static function saveRecipes()
     {
         if (RecipeDAO::getRowCount() < 1) {
@@ -21,6 +22,7 @@ class RecipeService
         }
     }
 
+    // to get a recipe json with mealName from the API
     public static function getRecipe($mealName)
     {
         $recipeURL = self::$recipeURLPre . $mealName;
@@ -29,6 +31,7 @@ class RecipeService
         return $recipe;
     }
 
+    // to get a recipe object with mealName
     static function getRecipeObject($mealName) {
         $recipeJson = self::getRecipe($mealName);
         $recipeDetails = $recipeJson->meals[0];

@@ -1,5 +1,6 @@
 <?php
 
+// This class Recipe is to store the information of Recipes from the API
 class Recipe
 {
     // Attributes

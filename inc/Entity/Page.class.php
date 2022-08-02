@@ -7,6 +7,7 @@ class Page
     public static $notifications;
     public static $message;
 
+    // Show header including the nav bar
     static function showHeader()
     { ?>
         <!DOCTYPE html>
@@ -36,7 +37,7 @@ class Page
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item fw-bold">
-                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Team07") ? "active" : ""); ?>" aria-current="page" href="Team07.php">Home</a>
+                                <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "TeamNumber07") ? "active" : ""); ?>" aria-current="page" href="TeamNumber07.php">Home</a>
                             </li>
                             <li class="nav-item fw-bold">
                                 <a class="nav-link <?php echo (str_contains($_SERVER['PHP_SELF'], "Recipes") ? "active" : ""); ?>" href="Recipes.php">Recipes</a>
@@ -120,7 +121,7 @@ class Page
         <?php
     }
 
-
+    // Show footer
     static function showFooter()
     { ?>
             <!-- JavaScript Bundle with Popper -->
@@ -131,7 +132,7 @@ class Page
 
     <?php }
 
-
+    // Show login form
     static function showLogin()
     { ?>
         <!-- Show error message when login -->
@@ -164,7 +165,7 @@ class Page
         </div>
     <?php }
 
-
+    // Show registration form
     static function showRegistration()
     { ?>
         <!-- Show error notifications for registration -->
@@ -218,7 +219,7 @@ class Page
         </div>
     <?php }
 
-
+    // Show logout page
     static function showLogout($user)
     {
     ?>
@@ -229,7 +230,7 @@ class Page
     <?php
     }
 
-
+    // Show home page with recipe cards
     static function showHome($recipes)
     {
     ?>
@@ -250,7 +251,7 @@ class Page
                     <input class="btn btn-info" type="submit" name="search" value="SEARCH" />
                 </div>
             </form>
-             <!-- Show the message for searching result -->
+            <!-- Show the message for searching result -->
             <?php
             if (!is_null(self::$message)) {
                 echo "<p class='text-center fst-italic text-success fw-bold'>" . self::$message . "</p>";
@@ -268,6 +269,7 @@ class Page
     <?php
     }
 
+    // Show one recipe card for the use of home page
     static function showRecipeCard($recipe)
     {
     ?>
@@ -289,7 +291,7 @@ class Page
     <?php
     }
 
-    // show the recipes that the user has ordered
+    // Show the recipes that the user has ordered
     static function showOrderRecipes($recipes)
     {
     ?>
@@ -308,7 +310,7 @@ class Page
                 <?php
                 if (count($recipes) == 0) {
                     echo "<h3 class='text-center'>No orders for now! Order now for recipes!</h3>";
-                    echo "<a href='Team07.php'><img src='./images/ordernow.png' class='img-fluid rounded mx-auto d-block' alt='ordernow'></a>";
+                    echo "<a href='TeamNumber07.php'><img src='./images/ordernow.png' class='img-fluid rounded mx-auto d-block' alt='ordernow'></a>";
                 } else {
                     echo "<h5 class='d-flex justify-content-between p-3'>The meals that you ordered:</h5>";
                 }
@@ -322,6 +324,7 @@ class Page
     <?php
     }
 
+    // Show one recipe card for the use of recipes page
     static function showOrderRecipeCard($recipe)
     {
     ?>
@@ -352,8 +355,7 @@ class Page
     <?php
     }
 
-
-    //Order Page; 
+    // Show order page for user to choose ingredents
     static function showOrder($recipe, $ingredents)
     {
 
@@ -383,6 +385,7 @@ class Page
     <?php
     }
 
+    // Show confirm order page
     static function showOrderDetails($ingredents, $total)
     {
         $stringOfIngredients = "";
@@ -409,7 +412,7 @@ class Page
                                     echo ' <th scope="row">' . $i . '</th>';
                                     echo "<td>$ingredent</td>";
                                     echo "<td>" . $_POST[str_replace(' ', '', $ingredent)] . "</td>";
-                                    echo "<td>$price</td>";
+                                    echo "<td>$" . $price . "</td>";
                                     echo "</tr>";
                                     $i++;
                                     echo ' <input type="hidden" name=' . str_replace(' ', '', $ingredent) . ' value=' . $_POST[str_replace(' ', '', $ingredent)] . '>';
@@ -417,7 +420,7 @@ class Page
                                 ?>
                             </tbody>
                         </table>
-                        Total Price: <?= $total ?>
+                        Total Price: <strong>$<?= $total ?></strong>
                         <input type="hidden" name="orderTotal" value=<?= $total ?>>
                         <div class="d-flex justify-content-center">
                             <input type="submit" name="confirm" class="btn btn-success" value="confirm">
@@ -429,8 +432,7 @@ class Page
     <?php
     }
 
-
-
+    // Show order history page
     static function showOrderHistory($allOrders)
     {
     ?>
@@ -446,7 +448,7 @@ class Page
             }
             ?>
             <div class="pt-3" style="background-color: #FFFACD;">
-                <h2>Order History</h2>
+                <h3 class='d-flex justify-content-between p-3'>Order History</h3>
 
                 <?php
 
@@ -543,3 +545,5 @@ class Page
                 }
             }
         }
+
+?>

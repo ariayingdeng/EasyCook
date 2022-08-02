@@ -1,5 +1,6 @@
 <?php 
 
+// This class InventoryItem is to track ingredients in our database
 class InventoryItem{
 
 
@@ -9,7 +10,7 @@ class InventoryItem{
     private $pricePerPortion;
     private $measurePerPortion;
 
-    //getter 
+    // getters
     function getID(){
         return $this->id;
     }
@@ -26,7 +27,7 @@ class InventoryItem{
         return $this->measurePerPortion;
     }
 
-    //setter 
+    // setters
     function setID($id){
         $this->id = $id;
     }

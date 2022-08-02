@@ -6,12 +6,14 @@ class OrderDAO
     private static $orderDb;
     private static $orderItemDb;
 
+    // function to init OrderDAO for both Order and OrderItem
     static function init()
     {
         self::$orderDb = new PDOAgent("Order");
         self::$orderItemDb = new PDOAgent("OrderItem");
     }
 
+    // fucntion to create an order
     static function createOrder(Order $order)
     {
         $sql = "INSERT INTO orders (totalPrice, imageURL, mealName, mealInstructions, userID,date,currentTime) VALUES (:totalPrice, :imageURL, :mealName, :mealInstructions, :userID,:date,:time)";
@@ -28,7 +30,7 @@ class OrderDAO
         return self::$orderDb->lastInsertedId();
     }
 
-    // get all orders 
+    // function to get all orders 
     static function getOrderByUserID($userID){
         $sql = "SELECT * FROM orders WHERE userID=:userID";
         self::$orderDb->query($sql);
@@ -37,7 +39,7 @@ class OrderDAO
         return self::$orderDb->getSetResult();
     }
 
-    
+    // function to create an orderItem
     static function createOrderItem(OrderItem $orderItem)
     {
         $sql = "INSERT INTO orderitem (orderID, inventoryID, amount) VALUES (:orderID, :inventoryID, :amount)";
@@ -50,6 +52,7 @@ class OrderDAO
         return self::$orderItemDb->lastInsertedId();
     }
     
+    // function to get all order items
     static function getOrderItems($orderID)
     {
         $sql = "SELECT * FROM orderitem WHERE orderID=:orderID";
@@ -59,6 +62,7 @@ class OrderDAO
         return self::$orderItemDb->getSetResult();
     }
 
+    // function to edit an order
     static function editOrders($orderID,$total){
         date_default_timezone_set("America/Los_Angeles");
         $sql = "UPDATE orders  SET totalPrice=:totalPrice, date=:date, currentTime=:currentTime WHERE id=:id";
@@ -69,11 +73,11 @@ class OrderDAO
         self::$orderDb->bind(":currentTime",date("H:i"));
         self::$orderDb->execute();
 
-
         // create a method to return 
         return self::$orderItemDb->lastInsertedId();
     }
 
+    // function to edit order items for an order
     static function editOrderItems($orderId,$inventoryID,$eachAmount){
 
         date_default_timezone_set("America/Los_Angeles");
@@ -86,6 +90,7 @@ class OrderDAO
         // return self::$orderItemDb->getSetResult();
     }
 
+    // function to delete an order with all order items
     static function deleteOrderWithAllOrderItems($orderID){
         $sql = "DELETE FROM orders WHERE id=:orderID";
         self::$orderDb->query($sql);

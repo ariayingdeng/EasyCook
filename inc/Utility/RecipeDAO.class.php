@@ -12,7 +12,7 @@ class RecipeDAO
         self::$db = new PDOAgent("Recipe");
     }
 
-    // to save recipe
+    // to save a recipe
     static function saveRecipe(Recipe $recipe)
     {
 

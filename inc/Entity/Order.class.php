@@ -1,5 +1,6 @@
 <?php 
 
+// This class Order is for Order details
 class Order{
 
     private $id; 
@@ -11,6 +12,7 @@ class Order{
     private $date;
     private $currentTime; 
 
+    // Setters
     function setID($id){
         $this->id = $id;
     }
@@ -36,6 +38,7 @@ class Order{
         $this->currentTime = $time;
     }
 
+    // Getters
     function getID(){
         return $this->id;
     }

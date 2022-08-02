@@ -4,6 +4,7 @@ class Validate
 {
     static $messages = [];
 
+    // function to validate registration
     static function validateRegister()
     {
         $valid = true;
@@ -57,6 +58,7 @@ class Validate
         return $valid;
     }
 
+    // function to validate editting profile feature
     static function validateEditAccount()
     {
         $valid = true;

@@ -3,7 +3,8 @@
 class LoginManager
 {
 
-    // This method is from the class demo in CSIS3280
+    // Reference: This method is from the class demo in CSIS3280
+    // function to verify login session
     static function verifyLogin()
     {
 
@@ -19,6 +20,7 @@ class LoginManager
         }
     }
 
+    // function to check POST for saving edit profile and to update profile in the database
     static function saveEditAccount()
     {
         // if the user info editting form is submitted

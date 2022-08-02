@@ -1,6 +1,6 @@
 <?php
 
-// Modified from the class demo in CSIS3280
+// Reference: Modified from the class demo in CSIS3280
 
 class PDOAgent  {
 

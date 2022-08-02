@@ -973,3 +973,7 @@ Stack trace:
 #0 E:\CSIS\Summer2022\3280\3280-project\OrderHistory.php(38): UserDAO::getUser(NULL)
 #1 {main}
   thrown in E:\CSIS\Summer2022\3280\3280-project\inc\Utility\UserDAO.class.php on line 34
+[02-Aug-2022 02:19:08 Europe/Berlin] Editting user account failed.
+[02-Aug-2022 02:19:22 Europe/Berlin] Editting user account failed.
+[02-Aug-2022 02:19:51 Europe/Berlin] Editting user account failed.
+[02-Aug-2022 02:20:00 Europe/Berlin] Editting user account failed.
