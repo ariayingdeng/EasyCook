@@ -1,4 +1,11 @@
 <?php
+/*
+    File: CSIS 3280 004 Term Project
+    Team Number: 07
+    Team Members:   
+    Ying Deng (300340489)
+    Liangku Lin (300335224)
+*/
 
 // require all the files
 require_once("inc/config.inc.php");

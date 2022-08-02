@@ -16,6 +16,8 @@ require_once("inc/Utility/RecipeDAO.class.php");
 require_once("inc/Utility/OrderDAO.class.php");
 require_once("inc/Utility/Validate.class.php");
 
+OrderDAO::init();
+UserDAO::init();
 
 // firstly verify user
 if (LoginManager::verifyLogin() == false) {
@@ -24,11 +26,6 @@ if (LoginManager::verifyLogin() == false) {
     // Check and save edit post
     LoginManager::saveEditAccount();
 }
-
-
-OrderDAO::init();
-UserDAO::init();
-
 
 //if post = delete
 if (isset($_POST['delete'])) {

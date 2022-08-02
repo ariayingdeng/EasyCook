@@ -30,7 +30,7 @@ class Page
         <body>
             <nav class="navbar navbar-expand-sm navbar-dark p-3" style="background-color: #ff7f4d;">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="Home.php">
+                    <a class="navbar-brand" href="TeamNumber07.php">
                         <!-- TODO: add icon for the project -->
                         Easy Cook
                     </a>
