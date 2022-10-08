@@ -1,4 +1,4 @@
-##About the app
+## About the app
 This is a project for CSIS3280 - Web Based Scripting
 Project's name:  easycook
 Description:  This is the website made for people srearching new recipes and grabing all ingredients conveniently.
@@ -6,7 +6,7 @@ Skills:  PHP, HTML, CSS, MySQL, Bootstrap
 
 
 
-##General installation
+## General installation
 1. Install XAMPP 
 2. Put the unzipped folder into C:\xampp\htdocs 
 3. Run Apache and MySQL  
