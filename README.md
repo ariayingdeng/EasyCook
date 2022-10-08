@@ -1,5 +1,5 @@
 # About the app
-#### This is a project for CSIS3280 - Web Based Scripting
+##### This is a project for CSIS3280 - Web Based Scripting
 Project's name:  easycook
 Description:  This is the website made for people srearching new recipes and grabing all ingredients conveniently.
 Skills:  PHP, HTML, CSS, MySQL, Bootstrap
